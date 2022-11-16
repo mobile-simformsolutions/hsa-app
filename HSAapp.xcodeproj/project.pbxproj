@@ -1,0 +1,2821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BB982A6C0A3C5CFF67C6A2A /* Pods_HSAapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEB3233AAC6DA8068F25F54 /* Pods_HSAapp.framework */; };
+		4D00858025CC63EA0006345E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00857F25CC63EA0006345E /* SplashView.swift */; };
+		4D00858925CC6AC60006345E /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00858825CC6AC60006345E /* SplashViewModel.swift */; };
+		4D02454A25C1EB3100A69D8E /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D02454925C1EB3100A69D8E /* Styles.swift */; };
+		4D02454F25C333AC00A69D8E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D02454E25C333AC00A69D8E /* APIService.swift */; };
+		4D02455425C3340000A69D8E /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D02455325C3340000A69D8E /* PersistenceService.swift */; };
+		4D02458825C89F3900A69D8E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D02458725C89F3900A69D8E /* Router.swift */; };
+		4D09D5D6269F2CDB00769013 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09D5D5269F2CDB00769013 /* Formatters.swift */; };
+		4D0A19A925E6F34600E093B9 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A19A825E6F34600E093B9 /* AlertExtension.swift */; };
+		4D12F5CF25E5905A0048A2A8 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D12F5CE25E5905A0048A2A8 /* KeychainService.swift */; };
+		4D12F5D525E597090048A2A8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D12F5D425E597090048A2A8 /* ActivityIndicator.swift */; };
+		4D48BC022653F01700C33A35 /* TransactionListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48BC012653F01700C33A35 /* TransactionListScreen.swift */; };
+		4D48BC042653F02500C33A35 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48BC032653F02500C33A35 /* TransactionListViewModel.swift */; };
+		4D48BC0E26540DD400C33A35 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D48BC0D26540DD400C33A35 /* HostingController.swift */; };
+		4D5BB8BB25DC5DED00541813 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5BB8BA25DC5DED00541813 /* Colors.xcassets */; };
+		4D821F12264B14D600D50000 /* DashboardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F11264B14D600D50000 /* DashboardTileView.swift */; };
+		4D821F14264B14E300D50000 /* DashboardTileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F13264B14E300D50000 /* DashboardTileViewModel.swift */; };
+		4D821F1B264C5AE400D50000 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F1A264C5AE400D50000 /* DashboardView.swift */; };
+		4D821F1D264C5AEF00D50000 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F1C264C5AEF00D50000 /* DashboardViewModel.swift */; };
+		4D821F1F264D77A600D50000 /* TransactionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F1E264D77A600D50000 /* TransactionSummary.swift */; };
+		4D821F21264D7B7600D50000 /* TransactionSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F20264D7B7600D50000 /* TransactionSummaryView.swift */; };
+		4D821F23264D7B9000D50000 /* TransactionSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F22264D7B9000D50000 /* TransactionSummaryViewModel.swift */; };
+		4D851A852628C950001EAB41 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D851A842628C950001EAB41 /* EnvironmentConfiguration.swift */; };
+		4D89B5252614BAC900D2FB73 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89B5242614BAC900D2FB73 /* ColorExtensions.swift */; };
+		4D89B55426151A0C00D2FB73 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54C261519ED00D2FB73 /* Poppins-Black.ttf */; };
+		4D89B55526151A0C00D2FB73 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B549261519ED00D2FB73 /* Poppins-BlackItalic.ttf */; };
+		4D89B55626151A0C00D2FB73 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B544261519ED00D2FB73 /* Poppins-Bold.ttf */; };
+		4D89B55726151A0C00D2FB73 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B541261519EC00D2FB73 /* Poppins-BoldItalic.ttf */; };
+		4D89B55826151A0C00D2FB73 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B545261519ED00D2FB73 /* Poppins-ExtraBold.ttf */; };
+		4D89B55926151A0C00D2FB73 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54A261519ED00D2FB73 /* Poppins-ExtraBoldItalic.ttf */; };
+		4D89B55A26151A0C00D2FB73 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53E261519EC00D2FB73 /* Poppins-ExtraLight.ttf */; };
+		4D89B55B26151A0C00D2FB73 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B546261519ED00D2FB73 /* Poppins-ExtraLightItalic.ttf */; };
+		4D89B55C26151A0C00D2FB73 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53F261519EC00D2FB73 /* Poppins-Italic.ttf */; };
+		4D89B55D26151A0C00D2FB73 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54B261519ED00D2FB73 /* Poppins-Light.ttf */; };
+		4D89B55E26151A0C00D2FB73 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54E261519ED00D2FB73 /* Poppins-LightItalic.ttf */; };
+		4D89B55F26151A0C00D2FB73 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54F261519ED00D2FB73 /* Poppins-Medium.ttf */; };
+		4D89B56026151A0C00D2FB73 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B540261519EC00D2FB73 /* Poppins-MediumItalic.ttf */; };
+		4D89B56126151A0C00D2FB73 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54D261519ED00D2FB73 /* Poppins-Regular.ttf */; };
+		4D89B56226151A0C00D2FB73 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B550261519ED00D2FB73 /* Poppins-SemiBold.ttf */; };
+		4D89B56326151A0C00D2FB73 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B547261519ED00D2FB73 /* Poppins-SemiBoldItalic.ttf */; };
+		4D89B56426151A0C00D2FB73 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B542261519ED00D2FB73 /* Poppins-Thin.ttf */; };
+		4D89B56526151A0C00D2FB73 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B548261519ED00D2FB73 /* Poppins-ThinItalic.ttf */; };
+		4D89B56626151A0C00D2FB73 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B534261519E300D2FB73 /* OpenSans-Bold.ttf */; };
+		4D89B56726151A0C00D2FB73 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B538261519E400D2FB73 /* OpenSans-BoldItalic.ttf */; };
+		4D89B56826151A0C00D2FB73 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B539261519E400D2FB73 /* OpenSans-ExtraBold.ttf */; };
+		4D89B56926151A0C00D2FB73 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53A261519E400D2FB73 /* OpenSans-ExtraBoldItalic.ttf */; };
+		4D89B56A26151A0C00D2FB73 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B536261519E400D2FB73 /* OpenSans-Italic.ttf */; };
+		4D89B56B26151A0C00D2FB73 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B537261519E400D2FB73 /* OpenSans-Light.ttf */; };
+		4D89B56C26151A0C00D2FB73 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53C261519E400D2FB73 /* OpenSans-LightItalic.ttf */; };
+		4D89B56D26151A0C00D2FB73 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53B261519E400D2FB73 /* OpenSans-Regular.ttf */; };
+		4D89B56E26151A0C00D2FB73 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B533261519E300D2FB73 /* OpenSans-SemiBold.ttf */; };
+		4D89B56F26151A0C00D2FB73 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B535261519E300D2FB73 /* OpenSans-SemiBoldItalic.ttf */; };
+		4D9C303325C1DEEC0080C52E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C303225C1DEEC0080C52E /* Header.swift */; };
+		4D9C304125C1E4570080C52E /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C304025C1E4570080C52E /* RepositoryService.swift */; };
+		4DA1DB4D2694B39200AB90DD /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1DB4C2694B39200AB90DD /* PullToRefresh.swift */; };
+		4DA2CCFA267B8C130046E7A3 /* HsaAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2CCF9267B8C130046E7A3 /* HsaAccountView.swift */; };
+		4DA2CD02267D104B0046E7A3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2CD01267D104B0046E7A3 /* MenuView.swift */; };
+		4DA2CD04267D105A0046E7A3 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2CD03267D105A0046E7A3 /* MenuViewModel.swift */; };
+		4DA661F826BB11BC004458A9 /* SwiftUIPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA661F726BB11BC004458A9 /* SwiftUIPullToRefresh.swift */; };
+		4DAEEC6625B7568000AE7FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAEEC6525B7568000AE7FC1 /* Assets.xcassets */; };
+		4DAEEC6925B7568000AE7FC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAEEC6825B7568000AE7FC1 /* Preview Assets.xcassets */; };
+		4DAEEC9325B75BDA00AE7FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAEEC9225B75BDA00AE7FC1 /* LaunchScreen.storyboard */; };
+		4DAF3C95264071DB00EEF74E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAF3C94264071DB00EEF74E /* Account.swift */; };
+		4DBD5F7425B8BDD500424B90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD5F7325B8BDD500424B90 /* SceneDelegate.swift */; };
+		4DBD5F7925B8BDF300424B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD5F7825B8BDF300424B90 /* AppDelegate.swift */; };
+		4DBD5F9725B8D02B00424B90 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD5F9625B8D02B00424B90 /* Logging.swift */; };
+		4DBD5FBC25BE079C00424B90 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD5FBB25BE079C00424B90 /* ViewExtensions.swift */; };
+		4DBED41D25D5A2F3001E882C /* dotsfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DBED41C25D5A2F3001E882C /* dotsfont.ttf */; };
+		4DBED42825D6E8B3001E882C /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBED42725D6E8B3001E882C /* ButtonState.swift */; };
+		4DBED43225D6F10F001E882C /* ValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBED43125D6F10F001E882C /* ValidatedTextField.swift */; };
+		4DBED43725DA8B37001E882C /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBED43625DA8B37001E882C /* ValidationResult.swift */; };
+		4DBED43C25DA8B77001E882C /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBED43B25DA8B77001E882C /* EmailValidation.swift */; };
+		4DBED44125DA9483001E882C /* PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBED44025DA9483001E882C /* PasswordValidation.swift */; };
+		4DC3ED5F26443DEC0041C024 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3ED5E26443DEC0041C024 /* Dispatch.swift */; };
+		4DC3ED6126495D5B0041C024 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3ED6026495D5B0041C024 /* Sync.swift */; };
+		4DC3ED632649A67F0041C024 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3ED622649A67F0041C024 /* MainView.swift */; };
+		4DC3ED652649AAD30041C024 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3ED642649AAD30041C024 /* MainViewModel.swift */; };
+		4DC74302263324AF00E08D83 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC74301263324AF00E08D83 /* LogView.swift */; };
+		4DC74307263324C500E08D83 /* LogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC74306263324C500E08D83 /* LogViewModel.swift */; };
+		4DE6A3432666B50500E89A0E /* AccountSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A3422666B50500E89A0E /* AccountSummary.swift */; };
+		4DE6A3472668146F00E89A0E /* APIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A3462668146F00E89A0E /* APIExtensions.swift */; };
+		4DE6A34B266E5E7C00E89A0E /* DashboardSummaryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A34A266E5E7C00E89A0E /* DashboardSummaryMock.swift */; };
+		4F01EA3D26A950B900E6CA19 /* AnalyticsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA3C26A950B800E6CA19 /* AnalyticsType.swift */; };
+		4F01EA4926A95AF500E6CA19 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA4826A95AF500E6CA19 /* UserDefaults.swift */; };
+		4F01EA4B26A95CC300E6CA19 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA4A26A95CC300E6CA19 /* Analytics.swift */; };
+		4F01EA4D26A9674900E6CA19 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA4C26A9674900E6CA19 /* AnalyticsEvent.swift */; };
+		4F01EA4F26A9675B00E6CA19 /* AnalyticsEventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA4E26A9675B00E6CA19 /* AnalyticsEventName.swift */; };
+		4F01EA5126A96AC200E6CA19 /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA5026A96AC100E6CA19 /* App+Injection.swift */; };
+		4F01EA5426A9705200E6CA19 /* View+Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA5326A9705100E6CA19 /* View+Analytics.swift */; };
+		4F01EA5626A9738100E6CA19 /* AnalyticsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01EA5526A9738100E6CA19 /* AnalyticsScreen.swift */; };
+		4F264CE3276B47AB0070F1AC /* View+ReadSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F264CE2276B47AB0070F1AC /* View+ReadSize.swift */; };
+		4F2707A726EA411000830FFA /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2707A626EA411000830FFA /* CustomDivider.swift */; };
+		4F30E7FC2769D8AF00F93CAC /* View+EmbedInScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30E7FB2769D8AF00F93CAC /* View+EmbedInScrollView.swift */; };
+		4F33857827B5283C00103DCB /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33857727B5283C00103DCB /* AlertView.swift */; };
+		4F47617426D777B000E822D1 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47617326D777B000E822D1 /* ArrayExtensions.swift */; };
+		4F5B33FA27F0443400C68FA9 /* NetworkStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B33F927F0443400C68FA9 /* NetworkStatusService.swift */; };
+		4F5B33FC27F1A24C00C68FA9 /* View+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B33FB27F1A24B00C68FA9 /* View+Alert.swift */; };
+		4F70BC8D26C1A79B000B81C4 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F70BC8C26C1A79B000B81C4 /* DateExtensions.swift */; };
+		4F70BC9226C2FA93000B81C4 /* TransactionListEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F70BC9126C2FA93000B81C4 /* TransactionListEmptyView.swift */; };
+		4F70BC9426C2FC3A000B81C4 /* TransactionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F70BC9326C2FC3A000B81C4 /* TransactionSection.swift */; };
+		4F70BC9626C3B898000B81C4 /* TransactionsManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F70BC9526C3B898000B81C4 /* TransactionsManaging.swift */; };
+		4F761FB026CBA39600AE8EE1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F761FAF26CBA39600AE8EE1 /* RealmManager.swift */; };
+		4F761FB326CBBCCD00AE8EE1 /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F761FB226CBBCCD00AE8EE1 /* AccountDetails.swift */; };
+		4F761FB526CBBD9600AE8EE1 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F761FB426CBBD9600AE8EE1 /* AccountType.swift */; };
+		4F769AF8279DE95C003B9869 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F769AF7279DE95C003B9869 /* GenericError.swift */; };
+		4F7A0439275BCF7C00BD5A4B /* RandomAccessCollection+Last.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A0438275BCF7B00BD5A4B /* RandomAccessCollection+Last.swift */; };
+		4F7AECD4275E2CE9007178E6 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 4F7AECD3275E2CE9007178E6 /* KeychainAccess */; };
+		4F7AECD6275E2CFD007178E6 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7AECD5275E2CFD007178E6 /* KeychainManager.swift */; };
+		4FA44DC426EBDE690098CCC8 /* View+WhenRedacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA44DC326EBDE690098CCC8 /* View+WhenRedacted.swift */; };
+		4FA6FCD627463188007C30ED /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6FCD527463187007C30ED /* NavigationLazyView.swift */; };
+		4FAD18BE275F8D5A0085C7C1 /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD18BD275F8D5A0085C7C1 /* UserCredentials.swift */; };
+		4FB215B426F497FD00A8B7B5 /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB215B326F497FD00A8B7B5 /* ContactUsView.swift */; };
+		4FB93C5A2701A75200FDCA21 /* ContactUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB93C592701A75200FDCA21 /* ContactUsViewModel.swift */; };
+		4FB95692272D16240052B598 /* HSAAppApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB95691272D16240052B598 /* HSAAppApplication.swift */; };
+		4FB95694272D169D0052B598 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB95693272D169D0052B598 /* main.swift */; };
+		4FB95696272D16E90052B598 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB95695272D16E90052B598 /* Notifications.swift */; };
+		4FB95698272D21D90052B598 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB95697272D21D80052B598 /* UserManager.swift */; };
+		4FBA7C1F26ADB1AE00C98DF8 /* StateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA7C1E26ADB1AE00C98DF8 /* StateButton.swift */; };
+		4FBA7C2126ADB1C300C98DF8 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA7C2026ADB1C300C98DF8 /* ActionButton.swift */; };
+		4FBE54F826BEC9ED00FECBFE /* AccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE54F726BEC9ED00FECBFE /* AccountHeaderView.swift */; };
+		4FBE54FA26BECA0500FECBFE /* HsaAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE54F926BECA0500FECBFE /* HsaAccountViewModel.swift */; };
+		4FBE54FC26BECEE200FECBFE /* AccountNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE54FB26BECEE200FECBFE /* AccountNumbersView.swift */; };
+		4FBE54FE26BED4FD00FECBFE /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE54FD26BED4FD00FECBFE /* ProgressBarView.swift */; };
+		4FBE550026C012A300FECBFE /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE54FF26C012A300FECBFE /* TransactionListView.swift */; };
+		4FBEF2A7270072D200571B08 /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBEF2A6270072D200571B08 /* View+CornerRadius.swift */; };
+		4FBEF2A9270072F700571B08 /* View+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBEF2A8270072F700571B08 /* View+Border.swift */; };
+		4FC7319F26FF152400A51595 /* View+Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319326FF152400A51595 /* View+Modal.swift */; };
+		4FC731A026FF152400A51595 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319426FF152400A51595 /* ModalView.swift */; };
+		4FC731A126FF152400A51595 /* AnyModalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319626FF152400A51595 /* AnyModalStyle.swift */; };
+		4FC731A226FF152400A51595 /* DefaultModalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319726FF152400A51595 /* DefaultModalStyle.swift */; };
+		4FC731A326FF152400A51595 /* Environment+ModalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319826FF152400A51595 /* Environment+ModalStyle.swift */; };
+		4FC731A426FF152400A51595 /* View+ModalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319926FF152400A51595 /* View+ModalStyle.swift */; };
+		4FC731A526FF152400A51595 /* ModalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319A26FF152400A51595 /* ModalStyle.swift */; };
+		4FC731A626FF152400A51595 /* ModalStyleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319B26FF152400A51595 /* ModalStyleConfiguration.swift */; };
+		4FC731A726FF152400A51595 /* ModalPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319D26FF152400A51595 /* ModalPresentationMode.swift */; };
+		4FC731A826FF152400A51595 /* Environment+ModalPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7319E26FF152400A51595 /* Environment+ModalPresentation.swift */; };
+		4FD0252A26EBE5E100641A46 /* EnumDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD0252926EBE5E100641A46 /* EnumDecodable.swift */; };
+		4FD8250D274502F600B3FFB2 /* View+CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8250C274502F600B3FFB2 /* View+CardView.swift */; };
+		4FD89EC726F1E2DF0058A280 /* UserDefaultsManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD89EC626F1E2DF0058A280 /* UserDefaultsManaging.swift */; };
+		4FD89EC926F1E2EC0058A280 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD89EC826F1E2EC0058A280 /* UserDefaultsManager.swift */; };
+		4FD89ED326F207A60058A280 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD89ED226F207A60058A280 /* PrimaryButtonStyle.swift */; };
+		4FD89ED526F20AC10058A280 /* OnboardingLinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD89ED426F20AC10058A280 /* OnboardingLinkButtonStyle.swift */; };
+		4FDE240A26E611850008D240 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE240926E611850008D240 /* Constants.swift */; };
+		4FDE241426E63E8F0008D240 /* Binding+Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE241326E63E8E0008D240 /* Binding+Callback.swift */; };
+		4FE569B627037DDE00869A06 /* SupportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE569B527037DDE00869A06 /* SupportRequest.swift */; };
+		4FE569B827037DE900869A06 /* SupportRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE569B727037DE900869A06 /* SupportRequestType.swift */; };
+		4FF51FFC26E25F1800E64D72 /* HSAAppNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF51FFB26E25F1700E64D72 /* HSAAppNavigationBar.swift */; };
+		4FF5200026E5079100E64D72 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF51FFF26E5079000E64D72 /* WebView.swift */; };
+		4FF602EC26B14978004D1690 /* UINavigationController+EmptyBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF602EB26B14977004D1690 /* UINavigationController+EmptyBackButton.swift */; };
+		4FF8A0F22775A42500442ACC /* ScrollViewIfNeeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8A0F12775A42500442ACC /* ScrollViewIfNeeded.swift */; };
+		55099F702923BADD008738C6 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55099F6F2923BADD008738C6 /* GenericResponse.swift */; };
+		55099F722923CD6B008738C6 /* URLLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55099F712923CD6B008738C6 /* URLLink.swift */; };
+		55099FDA2923E45B008738C6 /* DashboardScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55099FD92923E45B008738C6 /* DashboardScreenTests.swift */; };
+		554A4E652923F8C7001C36E0 /* Firebase in Resources */ = {isa = PBXBuildFile; fileRef = 554A4E642923F8C7001C36E0 /* Firebase */; };
+		557AB4CA291E9B3600CE1DD9 /* XCUITestsFAQFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AB4C9291E9B3600CE1DD9 /* XCUITestsFAQFlowTests.swift */; };
+		5589FC162924A16700BA4CD8 /* XCUITestsAppFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5589FC152924A16700BA4CD8 /* XCUITestsAppFlowTests.swift */; };
+		5589FC1D2924F81800BA4CD8 /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = 5589FC1C2924F81800BA4CD8 /* TextView */; };
+		55B6C4C22923F0D10036E472 /* HSAAccountScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6C4C12923F0D10036E472 /* HSAAccountScreenTests.swift */; };
+		730F20E18DFE9163674F623F /* Pods_HSAappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163A04B3E109179E12ED1E75 /* Pods_HSAappTests.framework */; };
+		AA0306212775E6E900A82AB8 /* UImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0306202775E6E900A82AB8 /* UImageExtension.swift */; };
+		AA20CFDE274E67AF00152C62 /* SupportSourceScreenName.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA20CFDD274E67AF00152C62 /* SupportSourceScreenName.swift */; };
+		AA72F13C28FECFB20024215E /* XCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72F13B28FECFB20024215E /* XCUITestsLaunchTests.swift */; };
+		AA82435A2796ED4100B22659 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8243592796ED4100B22659 /* PDFView.swift */; };
+		AA84A6F02716DCB1009FD357 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84A6EF2716DCB1009FD357 /* Decoder.swift */; };
+		AAD5B1BA26C6908F00942DFD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD5B1B926C6908F00942DFD /* StringExtension.swift */; };
+		AADB3471270C263C00F052D2 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADB3470270C263C00F052D2 /* NavigationUtil.swift */; };
+		AAECE0C22860B570008150F5 /* ContributionSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECE0C12860B570008150F5 /* ContributionSummaryDataModel.swift */; };
+		AAECE0C42860B59E008150F5 /* AccountSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECE0C32860B59E008150F5 /* AccountSummaryDataModel.swift */; };
+		AAECE0C62860B5F1008150F5 /* TransactionSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECE0C52860B5F1008150F5 /* TransactionSummaryDataModel.swift */; };
+		B970F194274E67AB00A0AD8E /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970F193274E67AB00A0AD8E /* Bundle+Version.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55099FDB2923E45B008738C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DAEEC5625B7568000AE7FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DAEEC5D25B7568000AE7FC1;
+			remoteInfo = Zenda;
+		};
+		AA72F13D28FECFB20024215E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DAEEC5625B7568000AE7FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DAEEC5D25B7568000AE7FC1;
+			remoteInfo = Zenda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		163A04B3E109179E12ED1E75 /* Pods_HSAappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSAappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2645D0B9D1B86DC36E37B16F /* Pods-HSAappTests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.beta.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.beta.xcconfig"; sourceTree = "<group>"; };
+		2BEB3233AAC6DA8068F25F54 /* Pods_HSAapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSAapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D00857F25CC63EA0006345E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		4D00858825CC6AC60006345E /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		4D02454925C1EB3100A69D8E /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		4D02454E25C333AC00A69D8E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4D02455325C3340000A69D8E /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		4D02458725C89F3900A69D8E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4D09D5D5269F2CDB00769013 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		4D0A19A825E6F34600E093B9 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		4D12F5CE25E5905A0048A2A8 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		4D12F5D425E597090048A2A8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4D48BC012653F01700C33A35 /* TransactionListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListScreen.swift; sourceTree = "<group>"; };
+		4D48BC032653F02500C33A35 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		4D48BC0D26540DD400C33A35 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		4D5BB8BA25DC5DED00541813 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4D821F11264B14D600D50000 /* DashboardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTileView.swift; sourceTree = "<group>"; };
+		4D821F13264B14E300D50000 /* DashboardTileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTileViewModel.swift; sourceTree = "<group>"; };
+		4D821F1A264C5AE400D50000 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		4D821F1C264C5AEF00D50000 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		4D821F1E264D77A600D50000 /* TransactionSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummary.swift; sourceTree = "<group>"; };
+		4D821F20264D7B7600D50000 /* TransactionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummaryView.swift; sourceTree = "<group>"; };
+		4D821F22264D7B9000D50000 /* TransactionSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummaryViewModel.swift; sourceTree = "<group>"; };
+		4D851A572628B533001EAB41 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		4D851A582628B549001EAB41 /* Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Beta.xcconfig; sourceTree = "<group>"; };
+		4D851A592628B555001EAB41 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
+		4D851A842628C950001EAB41 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
+		4D89B5242614BAC900D2FB73 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		4D89B533261519E300D2FB73 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		4D89B534261519E300D2FB73 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		4D89B535261519E300D2FB73 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		4D89B536261519E400D2FB73 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		4D89B537261519E400D2FB73 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		4D89B538261519E400D2FB73 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4D89B539261519E400D2FB73 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4D89B53A261519E400D2FB73 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		4D89B53B261519E400D2FB73 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		4D89B53C261519E400D2FB73 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		4D89B53D261519E400D2FB73 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4D89B53E261519EC00D2FB73 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4D89B53F261519EC00D2FB73 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		4D89B540261519EC00D2FB73 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4D89B541261519EC00D2FB73 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4D89B542261519ED00D2FB73 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		4D89B543261519ED00D2FB73 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		4D89B544261519ED00D2FB73 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		4D89B545261519ED00D2FB73 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4D89B546261519ED00D2FB73 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		4D89B547261519ED00D2FB73 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		4D89B548261519ED00D2FB73 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		4D89B549261519ED00D2FB73 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		4D89B54A261519ED00D2FB73 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		4D89B54B261519ED00D2FB73 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		4D89B54C261519ED00D2FB73 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		4D89B54D261519ED00D2FB73 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		4D89B54E261519ED00D2FB73 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		4D89B54F261519ED00D2FB73 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		4D89B550261519ED00D2FB73 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		4D9C303225C1DEEC0080C52E /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		4D9C304025C1E4570080C52E /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
+		4DA1DB4C2694B39200AB90DD /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		4DA2CCF9267B8C130046E7A3 /* HsaAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsaAccountView.swift; sourceTree = "<group>"; };
+		4DA2CD01267D104B0046E7A3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		4DA2CD03267D105A0046E7A3 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		4DA661F726BB11BC004458A9 /* SwiftUIPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPullToRefresh.swift; sourceTree = "<group>"; };
+		4DADD3AD262E1B31003CFA15 /* HSAapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HSAapp.entitlements; sourceTree = "<group>"; };
+		4DAEEC5E25B7568000AE7FC1 /* HSAapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSAapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAEEC6525B7568000AE7FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DAEEC6825B7568000AE7FC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DAEEC6A25B7568000AE7FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DAEEC9225B75BDA00AE7FC1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DAF3C94264071DB00EEF74E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		4DBD5F7325B8BDD500424B90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DBD5F7825B8BDF300424B90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DBD5F9625B8D02B00424B90 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		4DBD5FBB25BE079C00424B90 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		4DBED41C25D5A2F3001E882C /* dotsfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dotsfont.ttf; sourceTree = "<group>"; };
+		4DBED42725D6E8B3001E882C /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
+		4DBED43125D6F10F001E882C /* ValidatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedTextField.swift; sourceTree = "<group>"; };
+		4DBED43625DA8B37001E882C /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		4DBED43B25DA8B77001E882C /* EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
+		4DBED44025DA9483001E882C /* PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidation.swift; sourceTree = "<group>"; };
+		4DC3ED5E26443DEC0041C024 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		4DC3ED6026495D5B0041C024 /* Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sync.swift; sourceTree = "<group>"; };
+		4DC3ED622649A67F0041C024 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4DC3ED642649AAD30041C024 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4DC74301263324AF00E08D83 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		4DC74306263324C500E08D83 /* LogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewModel.swift; sourceTree = "<group>"; };
+		4DE6A3422666B50500E89A0E /* AccountSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummary.swift; sourceTree = "<group>"; };
+		4DE6A3462668146F00E89A0E /* APIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExtensions.swift; sourceTree = "<group>"; };
+		4DE6A34A266E5E7C00E89A0E /* DashboardSummaryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSummaryMock.swift; sourceTree = "<group>"; };
+		4F01EA3C26A950B800E6CA19 /* AnalyticsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsType.swift; sourceTree = "<group>"; };
+		4F01EA4826A95AF500E6CA19 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		4F01EA4A26A95CC300E6CA19 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		4F01EA4C26A9674900E6CA19 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		4F01EA4E26A9675B00E6CA19 /* AnalyticsEventName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventName.swift; sourceTree = "<group>"; };
+		4F01EA5026A96AC100E6CA19 /* App+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Injection.swift"; sourceTree = "<group>"; };
+		4F01EA5326A9705100E6CA19 /* View+Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Analytics.swift"; sourceTree = "<group>"; };
+		4F01EA5526A9738100E6CA19 /* AnalyticsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreen.swift; sourceTree = "<group>"; };
+		4F1210C3276751200020B071 /* MIGRATIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MIGRATIONS.md; sourceTree = "<group>"; };
+		4F264CE2276B47AB0070F1AC /* View+ReadSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ReadSize.swift"; sourceTree = "<group>"; };
+		4F2707A626EA411000830FFA /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
+		4F30E7FB2769D8AF00F93CAC /* View+EmbedInScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EmbedInScrollView.swift"; sourceTree = "<group>"; };
+		4F33857727B5283C00103DCB /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		4F47617326D777B000E822D1 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		4F5B33F927F0443400C68FA9 /* NetworkStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatusService.swift; sourceTree = "<group>"; };
+		4F5B33FB27F1A24B00C68FA9 /* View+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Alert.swift"; sourceTree = "<group>"; };
+		4F70BC8C26C1A79B000B81C4 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		4F70BC9126C2FA93000B81C4 /* TransactionListEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListEmptyView.swift; sourceTree = "<group>"; };
+		4F70BC9326C2FC3A000B81C4 /* TransactionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSection.swift; sourceTree = "<group>"; };
+		4F70BC9526C3B898000B81C4 /* TransactionsManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManaging.swift; sourceTree = "<group>"; };
+		4F761FAF26CBA39600AE8EE1 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		4F761FB226CBBCCD00AE8EE1 /* AccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetails.swift; sourceTree = "<group>"; };
+		4F761FB426CBBD9600AE8EE1 /* AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
+		4F769AF7279DE95C003B9869 /* GenericError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		4F7A0438275BCF7B00BD5A4B /* RandomAccessCollection+Last.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+Last.swift"; sourceTree = "<group>"; };
+		4F7AECD5275E2CFD007178E6 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		4FA44DC326EBDE690098CCC8 /* View+WhenRedacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+WhenRedacted.swift"; sourceTree = "<group>"; };
+		4FA6FCD527463187007C30ED /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		4FAD18BD275F8D5A0085C7C1 /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		4FB215B326F497FD00A8B7B5 /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		4FB93C592701A75200FDCA21 /* ContactUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewModel.swift; sourceTree = "<group>"; };
+		4FB95691272D16240052B598 /* HSAAppApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAAppApplication.swift; sourceTree = "<group>"; };
+		4FB95693272D169D0052B598 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4FB95695272D16E90052B598 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		4FB95697272D21D80052B598 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		4FBA7C1E26ADB1AE00C98DF8 /* StateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateButton.swift; sourceTree = "<group>"; };
+		4FBA7C2026ADB1C300C98DF8 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		4FBE54F726BEC9ED00FECBFE /* AccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderView.swift; sourceTree = "<group>"; };
+		4FBE54F926BECA0500FECBFE /* HsaAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsaAccountViewModel.swift; sourceTree = "<group>"; };
+		4FBE54FB26BECEE200FECBFE /* AccountNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumbersView.swift; sourceTree = "<group>"; };
+		4FBE54FD26BED4FD00FECBFE /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		4FBE54FF26C012A300FECBFE /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		4FBEF2A6270072D200571B08 /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
+		4FBEF2A8270072F700571B08 /* View+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Border.swift"; sourceTree = "<group>"; };
+		4FC7319326FF152400A51595 /* View+Modal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Modal.swift"; sourceTree = "<group>"; };
+		4FC7319426FF152400A51595 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		4FC7319626FF152400A51595 /* AnyModalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyModalStyle.swift; sourceTree = "<group>"; };
+		4FC7319726FF152400A51595 /* DefaultModalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultModalStyle.swift; sourceTree = "<group>"; };
+		4FC7319826FF152400A51595 /* Environment+ModalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+ModalStyle.swift"; sourceTree = "<group>"; };
+		4FC7319926FF152400A51595 /* View+ModalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ModalStyle.swift"; sourceTree = "<group>"; };
+		4FC7319A26FF152400A51595 /* ModalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalStyle.swift; sourceTree = "<group>"; };
+		4FC7319B26FF152400A51595 /* ModalStyleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalStyleConfiguration.swift; sourceTree = "<group>"; };
+		4FC7319D26FF152400A51595 /* ModalPresentationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationMode.swift; sourceTree = "<group>"; };
+		4FC7319E26FF152400A51595 /* Environment+ModalPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+ModalPresentation.swift"; sourceTree = "<group>"; };
+		4FD0252926EBE5E100641A46 /* EnumDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDecodable.swift; sourceTree = "<group>"; };
+		4FD8250C274502F600B3FFB2 /* View+CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CardView.swift"; sourceTree = "<group>"; };
+		4FD89EC626F1E2DF0058A280 /* UserDefaultsManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManaging.swift; sourceTree = "<group>"; };
+		4FD89EC826F1E2EC0058A280 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		4FD89ED226F207A60058A280 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		4FD89ED426F20AC10058A280 /* OnboardingLinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLinkButtonStyle.swift; sourceTree = "<group>"; };
+		4FDE240926E611850008D240 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4FDE241326E63E8E0008D240 /* Binding+Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Callback.swift"; sourceTree = "<group>"; };
+		4FE569B527037DDE00869A06 /* SupportRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportRequest.swift; sourceTree = "<group>"; };
+		4FE569B727037DE900869A06 /* SupportRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportRequestType.swift; sourceTree = "<group>"; };
+		4FF51FFB26E25F1700E64D72 /* HSAAppNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAAppNavigationBar.swift; sourceTree = "<group>"; };
+		4FF51FFF26E5079000E64D72 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4FF602EB26B14977004D1690 /* UINavigationController+EmptyBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+EmptyBackButton.swift"; sourceTree = "<group>"; };
+		4FF8A0F12775A42500442ACC /* ScrollViewIfNeeded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewIfNeeded.swift; sourceTree = "<group>"; };
+		55099F6F2923BADD008738C6 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		55099F712923CD6B008738C6 /* URLLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLLink.swift; sourceTree = "<group>"; };
+		55099FD72923E45B008738C6 /* HSAappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSAappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55099FD92923E45B008738C6 /* DashboardScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenTests.swift; sourceTree = "<group>"; };
+		554A4E642923F8C7001C36E0 /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Firebase; sourceTree = "<group>"; };
+		556E6F1B7D83CC53302E92C2 /* Pods-HSAapp.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.dev.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.dev.xcconfig"; sourceTree = "<group>"; };
+		557AB4C9291E9B3600CE1DD9 /* XCUITestsFAQFlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCUITestsFAQFlowTests.swift; sourceTree = "<group>"; };
+		5589FC152924A16700BA4CD8 /* XCUITestsAppFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestsAppFlowTests.swift; sourceTree = "<group>"; };
+		55B6C4C12923F0D10036E472 /* HSAAccountScreenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSAAccountScreenTests.swift; sourceTree = "<group>"; };
+		80A91C050BA73520861D73CA /* Pods-HSAapp.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.beta.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.beta.xcconfig"; sourceTree = "<group>"; };
+		8F86B181347D7A72AE471785 /* Pods-HSAappTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.dev.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.dev.xcconfig"; sourceTree = "<group>"; };
+		953BB6F9D34D428C7CF870AD /* Pods-HSAapp.beta - debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.beta - debug.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.beta - debug.xcconfig"; sourceTree = "<group>"; };
+		A762E70F7C6D4C40BEB15780 /* Pods-HSAapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.debug.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.debug.xcconfig"; sourceTree = "<group>"; };
+		AA0306202775E6E900A82AB8 /* UImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UImageExtension.swift; sourceTree = "<group>"; };
+		AA20CFDD274E67AF00152C62 /* SupportSourceScreenName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSourceScreenName.swift; sourceTree = "<group>"; };
+		AA72F13728FECFB20024215E /* HSAappXCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSAappXCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA72F13B28FECFB20024215E /* XCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA8243592796ED4100B22659 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		AA84A6EF2716DCB1009FD357 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		AAD5B1B926C6908F00942DFD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		AADB3470270C263C00F052D2 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
+		AAECE0C12860B570008150F5 /* ContributionSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionSummaryDataModel.swift; sourceTree = "<group>"; };
+		AAECE0C32860B59E008150F5 /* AccountSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryDataModel.swift; sourceTree = "<group>"; };
+		AAECE0C52860B5F1008150F5 /* TransactionSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummaryDataModel.swift; sourceTree = "<group>"; };
+		B944B9B1AF8112D8B380EDA7 /* Pods-HSAappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.debug.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B970F193274E67AB00A0AD8E /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
+		C53AA0543FD6BDD4E27E33E3 /* Pods-HSAapp.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.app store.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.app store.xcconfig"; sourceTree = "<group>"; };
+		D9F7AE8C4B7DC83D7CFDD9DA /* Pods-HSAappTests.beta - debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.beta - debug.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.beta - debug.xcconfig"; sourceTree = "<group>"; };
+		F5655633C2DDDAE711B71EF8 /* Pods-HSAappTests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.app store.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.app store.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DAEEC5B25B7568000AE7FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7AECD4275E2CE9007178E6 /* KeychainAccess in Frameworks */,
+				5589FC1D2924F81800BA4CD8 /* TextView in Frameworks */,
+				1BB982A6C0A3C5CFF67C6A2A /* Pods_HSAapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55099FD42923E45B008738C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730F20E18DFE9163674F623F /* Pods_HSAappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA72F13428FECFB20024215E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D02456825C48FAE00A69D8E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4DC3ED622649A67F0041C024 /* MainView.swift */,
+				4DC3ED642649AAD30041C024 /* MainViewModel.swift */,
+				55099F6C2923A3D4008738C6 /* Menu */,
+				4DC3ED662649BE870041C024 /* Dashboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4D02459125CB117300A69D8E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4DBED43B25DA8B77001E882C /* EmailValidation.swift */,
+				4DBED44025DA9483001E882C /* PasswordValidation.swift */,
+				4FBE54FD26BED4FD00FECBFE /* ProgressBarView.swift */,
+				4DBED43625DA8B37001E882C /* ValidationResult.swift */,
+				4FF51FFB26E25F1700E64D72 /* HSAAppNavigationBar.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4D12F5D325E596EF0048A2A8 /* UIKitBridges */ = {
+			isa = PBXGroup;
+			children = (
+				AA8243592796ED4100B22659 /* PDFView.swift */,
+				4D12F5D425E597090048A2A8 /* ActivityIndicator.swift */,
+				4FF51FFF26E5079000E64D72 /* WebView.swift */,
+			);
+			path = UIKitBridges;
+			sourceTree = "<group>";
+		};
+		4D48BC1326582B8B00C33A35 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				4FF830B8274CDD4600F5B3D2 /* Components */,
+				4D48BC012653F01700C33A35 /* TransactionListScreen.swift */,
+				4D48BC032653F02500C33A35 /* TransactionListViewModel.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		4D821F10264B14C200D50000 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4D821F1A264C5AE400D50000 /* DashboardView.swift */,
+				4D821F1C264C5AEF00D50000 /* DashboardViewModel.swift */,
+				4D821F11264B14D600D50000 /* DashboardTileView.swift */,
+				4D821F13264B14E300D50000 /* DashboardTileViewModel.swift */,
+				4D48BC1326582B8B00C33A35 /* Transactions */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4D821F17264C1B7200D50000 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4D821F1E264D77A600D50000 /* TransactionSummary.swift */,
+				4DE6A3422666B50500E89A0E /* AccountSummary.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4D851A562628B4F1001EAB41 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				554A4E642923F8C7001C36E0 /* Firebase */,
+				4D851A572628B533001EAB41 /* Development.xcconfig */,
+				4D851A582628B549001EAB41 /* Beta.xcconfig */,
+				4D851A592628B555001EAB41 /* AppStore.xcconfig */,
+				4D851A842628C950001EAB41 /* EnvironmentConfiguration.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		4D9C303125C1DEDC0080C52E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4FBA7C1D26ADB19B00C98DF8 /* Buttons */,
+				4DBF6BB925D47AD500B4E171 /* Controls */,
+				4FC7319226FF151300A51595 /* ModalView */,
+				4D9C303225C1DEEC0080C52E /* Header.swift */,
+				4D02454925C1EB3100A69D8E /* Styles.swift */,
+				4DBED43125D6F10F001E882C /* ValidatedTextField.swift */,
+				4F2707A626EA411000830FFA /* CustomDivider.swift */,
+				4FA6FCD527463187007C30ED /* NavigationLazyView.swift */,
+				4FF8A0F12775A42500442ACC /* ScrollViewIfNeeded.swift */,
+				4F33857727B5283C00103DCB /* AlertView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4D9C303F25C1E4320080C52E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F01EA4226A958F100E6CA19 /* Dependency Injection */,
+				4F01EA3E26A950BD00E6CA19 /* Analytics */,
+				4FD89EC526F1E2D00058A280 /* UserDefaults */,
+				4D02454E25C333AC00A69D8E /* APIService.swift */,
+				4D9C304025C1E4570080C52E /* RepositoryService.swift */,
+				4D12F5CE25E5905A0048A2A8 /* KeychainService.swift */,
+				4F7AECD5275E2CFD007178E6 /* KeychainManager.swift */,
+				4F5B33F927F0443400C68FA9 /* NetworkStatusService.swift */,
+				4DBD5F9625B8D02B00424B90 /* Logging.swift */,
+				4D02455325C3340000A69D8E /* PersistenceService.swift */,
+				4F761FAF26CBA39600AE8EE1 /* RealmManager.swift */,
+				4DC3ED6026495D5B0041C024 /* Sync.swift */,
+				4FB95697272D21D80052B598 /* UserManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4DA2CCF8267B8BFD0046E7A3 /* HsaAccount */ = {
+			isa = PBXGroup;
+			children = (
+				4DA2CCF9267B8C130046E7A3 /* HsaAccountView.swift */,
+				4FBE54F926BECA0500FECBFE /* HsaAccountViewModel.swift */,
+			);
+			path = HsaAccount;
+			sourceTree = "<group>";
+		};
+		4DAEEC5525B7568000AE7FC1 = {
+			isa = PBXGroup;
+			children = (
+				4DAEEC6025B7568000AE7FC1 /* HSAapp */,
+				AA72F13828FECFB20024215E /* HSAappXCUITests */,
+				55099FD82923E45B008738C6 /* HSAappTests */,
+				4DAEEC5F25B7568000AE7FC1 /* Products */,
+				AB0240160F9705E925651F9E /* Pods */,
+				7C2E36D7C5DD6928B8D0A3E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DAEEC5F25B7568000AE7FC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DAEEC5E25B7568000AE7FC1 /* HSAapp.app */,
+				AA72F13728FECFB20024215E /* HSAappXCUITests.xctest */,
+				55099FD72923E45B008738C6 /* HSAappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DAEEC6025B7568000AE7FC1 /* HSAapp */ = {
+			isa = PBXGroup;
+			children = (
+				4DADD3AD262E1B31003CFA15 /* HSAapp.entitlements */,
+				4FB95693272D169D0052B598 /* main.swift */,
+				4DBD5F7825B8BDF300424B90 /* AppDelegate.swift */,
+				4DBD5F7325B8BDD500424B90 /* SceneDelegate.swift */,
+				4D851A562628B4F1001EAB41 /* Configs */,
+				4DBD5FA425BE050300424B90 /* UI */,
+				4DBD5F9B25BA10F400424B90 /* Models */,
+				4FF830BD274CE1C300F5B3D2 /* Scenes */,
+				4D9C303F25C1E4320080C52E /* Services */,
+				4DBF6BBF25D5907A00B4E171 /* Fonts */,
+				4DAEEC6725B7568000AE7FC1 /* Preview Content */,
+				4DAEEC9225B75BDA00AE7FC1 /* LaunchScreen.storyboard */,
+				4DAEEC6A25B7568000AE7FC1 /* Info.plist */,
+				4DAEEC6525B7568000AE7FC1 /* Assets.xcassets */,
+				4D5BB8BA25DC5DED00541813 /* Colors.xcassets */,
+			);
+			path = HSAapp;
+			sourceTree = "<group>";
+		};
+		4DAEEC6725B7568000AE7FC1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DAEEC6825B7568000AE7FC1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DBD5F9B25BA10F400424B90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55099F6D2923B9BA008738C6 /* DatabaseModel */,
+				55099F6E2923BAC8008738C6 /* ResponseModel */,
+				AA13EC66286AFE3600D331AF /* RequestModel */,
+				AAECE0BE2860B53A008150F5 /* DataModel */,
+				4FDE240B26E612CF0008D240 /* Common */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4DBD5FA425BE050300424B90 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4D02458725C89F3900A69D8E /* Router.swift */,
+				4FB95691272D16240052B598 /* HSAAppApplication.swift */,
+				4FDE240926E611850008D240 /* Constants.swift */,
+				4D9C303125C1DEDC0080C52E /* Common */,
+				4F01EA5226A9704100E6CA19 /* Modifiers */,
+				4FF830BE274CE20000F5B3D2 /* Extensions */,
+				AA35DA1D26CA9C2400679401 /* HelperClass */,
+				4D12F5D325E596EF0048A2A8 /* UIKitBridges */,
+				4D02459125CB117300A69D8E /* Util */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4DBF6BB925D47AD500B4E171 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				4D48BC0D26540DD400C33A35 /* HostingController.swift */,
+				4DA1DB4C2694B39200AB90DD /* PullToRefresh.swift */,
+				4DA661F726BB11BC004458A9 /* SwiftUIPullToRefresh.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		4DBF6BBF25D5907A00B4E171 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4D89B543261519ED00D2FB73 /* OFL.txt */,
+				4D89B54C261519ED00D2FB73 /* Poppins-Black.ttf */,
+				4D89B549261519ED00D2FB73 /* Poppins-BlackItalic.ttf */,
+				4D89B544261519ED00D2FB73 /* Poppins-Bold.ttf */,
+				4D89B541261519EC00D2FB73 /* Poppins-BoldItalic.ttf */,
+				4D89B545261519ED00D2FB73 /* Poppins-ExtraBold.ttf */,
+				4D89B54A261519ED00D2FB73 /* Poppins-ExtraBoldItalic.ttf */,
+				4D89B53E261519EC00D2FB73 /* Poppins-ExtraLight.ttf */,
+				4D89B546261519ED00D2FB73 /* Poppins-ExtraLightItalic.ttf */,
+				4D89B53F261519EC00D2FB73 /* Poppins-Italic.ttf */,
+				4D89B54B261519ED00D2FB73 /* Poppins-Light.ttf */,
+				4D89B54E261519ED00D2FB73 /* Poppins-LightItalic.ttf */,
+				4D89B54F261519ED00D2FB73 /* Poppins-Medium.ttf */,
+				4D89B540261519EC00D2FB73 /* Poppins-MediumItalic.ttf */,
+				4D89B54D261519ED00D2FB73 /* Poppins-Regular.ttf */,
+				4D89B550261519ED00D2FB73 /* Poppins-SemiBold.ttf */,
+				4D89B547261519ED00D2FB73 /* Poppins-SemiBoldItalic.ttf */,
+				4D89B542261519ED00D2FB73 /* Poppins-Thin.ttf */,
+				4D89B548261519ED00D2FB73 /* Poppins-ThinItalic.ttf */,
+				4D89B53D261519E400D2FB73 /* LICENSE.txt */,
+				4D89B534261519E300D2FB73 /* OpenSans-Bold.ttf */,
+				4D89B538261519E400D2FB73 /* OpenSans-BoldItalic.ttf */,
+				4D89B539261519E400D2FB73 /* OpenSans-ExtraBold.ttf */,
+				4D89B53A261519E400D2FB73 /* OpenSans-ExtraBoldItalic.ttf */,
+				4D89B536261519E400D2FB73 /* OpenSans-Italic.ttf */,
+				4D89B537261519E400D2FB73 /* OpenSans-Light.ttf */,
+				4D89B53C261519E400D2FB73 /* OpenSans-LightItalic.ttf */,
+				4D89B53B261519E400D2FB73 /* OpenSans-Regular.ttf */,
+				4D89B533261519E300D2FB73 /* OpenSans-SemiBold.ttf */,
+				4D89B535261519E300D2FB73 /* OpenSans-SemiBoldItalic.ttf */,
+				4DBED41C25D5A2F3001E882C /* dotsfont.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4DC3ED662649BE870041C024 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4F70BC9726C3C411000B81C4 /* Account */,
+				4D821F10264B14C200D50000 /* Dashboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4DC743002633249400E08D83 /* Debugging */ = {
+			isa = PBXGroup;
+			children = (
+				4DC74301263324AF00E08D83 /* LogView.swift */,
+				4DC74306263324C500E08D83 /* LogViewModel.swift */,
+			);
+			path = Debugging;
+			sourceTree = "<group>";
+		};
+		4F01EA3E26A950BD00E6CA19 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4F01EA4A26A95CC300E6CA19 /* Analytics.swift */,
+				4F01EA4C26A9674900E6CA19 /* AnalyticsEvent.swift */,
+				4F01EA4E26A9675B00E6CA19 /* AnalyticsEventName.swift */,
+				4F01EA3C26A950B800E6CA19 /* AnalyticsType.swift */,
+				4F01EA5526A9738100E6CA19 /* AnalyticsScreen.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		4F01EA4226A958F100E6CA19 /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				4F01EA5026A96AC100E6CA19 /* App+Injection.swift */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		4F01EA5226A9704100E6CA19 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4F01EA5326A9705100E6CA19 /* View+Analytics.swift */,
+				4FBEF2A6270072D200571B08 /* View+CornerRadius.swift */,
+				4FBEF2A8270072F700571B08 /* View+Border.swift */,
+				4FD8250C274502F600B3FFB2 /* View+CardView.swift */,
+				4F30E7FB2769D8AF00F93CAC /* View+EmbedInScrollView.swift */,
+				4F264CE2276B47AB0070F1AC /* View+ReadSize.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4F70BC9026C2FA5B000B81C4 /* TransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE54FF26C012A300FECBFE /* TransactionListView.swift */,
+				4F70BC9126C2FA93000B81C4 /* TransactionListEmptyView.swift */,
+				4F70BC9326C2FC3A000B81C4 /* TransactionSection.swift */,
+				4F70BC9526C3B898000B81C4 /* TransactionsManaging.swift */,
+			);
+			path = TransactionList;
+			sourceTree = "<group>";
+		};
+		4F70BC9726C3C411000B81C4 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				4F70BC9826C3C423000B81C4 /* Components */,
+				4DA2CCF8267B8BFD0046E7A3 /* HsaAccount */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		4F70BC9826C3C423000B81C4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE54F726BEC9ED00FECBFE /* AccountHeaderView.swift */,
+				4FBE54FB26BECEE200FECBFE /* AccountNumbersView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4F761FB126CBBCBA00AE8EE1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				4DAF3C94264071DB00EEF74E /* Account.swift */,
+				4F761FB226CBBCCD00AE8EE1 /* AccountDetails.swift */,
+				4F761FB426CBBD9600AE8EE1 /* AccountType.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		4FB215B226F497F100A8B7B5 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				4FB215B326F497FD00A8B7B5 /* ContactUsView.swift */,
+				4FB93C592701A75200FDCA21 /* ContactUsViewModel.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		4FBA7C1D26ADB19B00C98DF8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4DBED42725D6E8B3001E882C /* ButtonState.swift */,
+				4FBA7C1E26ADB1AE00C98DF8 /* StateButton.swift */,
+				4FBA7C2026ADB1C300C98DF8 /* ActionButton.swift */,
+				4FD89ED226F207A60058A280 /* PrimaryButtonStyle.swift */,
+				4FD89ED426F20AC10058A280 /* OnboardingLinkButtonStyle.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4FC7319226FF151300A51595 /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7319C26FF152400A51595 /* Presentation */,
+				4FC7319526FF152400A51595 /* Style */,
+				4FC7319426FF152400A51595 /* ModalView.swift */,
+				4FC7319326FF152400A51595 /* View+Modal.swift */,
+			);
+			path = ModalView;
+			sourceTree = "<group>";
+		};
+		4FC7319526FF152400A51595 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7319626FF152400A51595 /* AnyModalStyle.swift */,
+				4FC7319726FF152400A51595 /* DefaultModalStyle.swift */,
+				4FC7319826FF152400A51595 /* Environment+ModalStyle.swift */,
+				4FC7319926FF152400A51595 /* View+ModalStyle.swift */,
+				4FC7319A26FF152400A51595 /* ModalStyle.swift */,
+				4FC7319B26FF152400A51595 /* ModalStyleConfiguration.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		4FC7319C26FF152400A51595 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7319D26FF152400A51595 /* ModalPresentationMode.swift */,
+				4FC7319E26FF152400A51595 /* Environment+ModalPresentation.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4FD89EC526F1E2D00058A280 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				4FD89EC626F1E2DF0058A280 /* UserDefaultsManaging.swift */,
+				4FD89EC826F1E2EC0058A280 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		4FDE240B26E612CF0008D240 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F1210C3276751200020B071 /* MIGRATIONS.md */,
+				5589FC172924A2FC00BA4CD8 /* MockData */,
+				55099F712923CD6B008738C6 /* URLLink.swift */,
+				4FD0252926EBE5E100641A46 /* EnumDecodable.swift */,
+				4F769AF7279DE95C003B9869 /* GenericError.swift */,
+				4FAD18BD275F8D5A0085C7C1 /* UserCredentials.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4FE569B427037DD400869A06 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4FE569B527037DDE00869A06 /* SupportRequest.swift */,
+				4FE569B727037DE900869A06 /* SupportRequestType.swift */,
+				AA20CFDD274E67AF00152C62 /* SupportSourceScreenName.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		4FF830B8274CDD4600F5B3D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4F70BC9026C2FA5B000B81C4 /* TransactionList */,
+				4D821F20264D7B7600D50000 /* TransactionSummaryView.swift */,
+				4D821F22264D7B9000D50000 /* TransactionSummaryViewModel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4FF830BD274CE1C300F5B3D2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4D00857F25CC63EA0006345E /* SplashView.swift */,
+				4D00858825CC6AC60006345E /* SplashViewModel.swift */,
+				4D02456825C48FAE00A69D8E /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4FF830BE274CE20000F5B3D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FDE241326E63E8E0008D240 /* Binding+Callback.swift */,
+				B970F193274E67AB00A0AD8E /* Bundle+Version.swift */,
+				4FB95695272D16E90052B598 /* Notifications.swift */,
+				4F7A0438275BCF7B00BD5A4B /* RandomAccessCollection+Last.swift */,
+				4F01EA4826A95AF500E6CA19 /* UserDefaults.swift */,
+				4D0A19A825E6F34600E093B9 /* AlertExtension.swift */,
+				4DE6A3462668146F00E89A0E /* APIExtensions.swift */,
+				4F47617326D777B000E822D1 /* ArrayExtensions.swift */,
+				4D89B5242614BAC900D2FB73 /* ColorExtensions.swift */,
+				4F70BC8C26C1A79B000B81C4 /* DateExtensions.swift */,
+				4DC3ED5E26443DEC0041C024 /* Dispatch.swift */,
+				4D09D5D5269F2CDB00769013 /* Formatters.swift */,
+				AAD5B1B926C6908F00942DFD /* StringExtension.swift */,
+				AA0306202775E6E900A82AB8 /* UImageExtension.swift */,
+				4FF602EB26B14977004D1690 /* UINavigationController+EmptyBackButton.swift */,
+				4FA44DC326EBDE690098CCC8 /* View+WhenRedacted.swift */,
+				4F5B33FB27F1A24B00C68FA9 /* View+Alert.swift */,
+				4DBD5FBB25BE079C00424B90 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		55099F6C2923A3D4008738C6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4DA2CD01267D104B0046E7A3 /* MenuView.swift */,
+				4DA2CD03267D105A0046E7A3 /* MenuViewModel.swift */,
+				4FB215B226F497F100A8B7B5 /* Contact */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		55099F6D2923B9BA008738C6 /* DatabaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D821F17264C1B7200D50000 /* Dashboard */,
+				4F761FB126CBBCBA00AE8EE1 /* Account */,
+			);
+			path = DatabaseModel;
+			sourceTree = "<group>";
+		};
+		55099F6E2923BAC8008738C6 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				55099F6F2923BADD008738C6 /* GenericResponse.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		55099FD82923E45B008738C6 /* HSAappTests */ = {
+			isa = PBXGroup;
+			children = (
+				55099FD92923E45B008738C6 /* DashboardScreenTests.swift */,
+				55B6C4C12923F0D10036E472 /* HSAAccountScreenTests.swift */,
+			);
+			path = HSAappTests;
+			sourceTree = "<group>";
+		};
+		5589FC172924A2FC00BA4CD8 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6A34A266E5E7C00E89A0E /* DashboardSummaryMock.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		7C2E36D7C5DD6928B8D0A3E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB3233AAC6DA8068F25F54 /* Pods_HSAapp.framework */,
+				163A04B3E109179E12ED1E75 /* Pods_HSAappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA13EC66286AFE3600D331AF /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FE569B427037DD400869A06 /* Support */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		AA35DA1D26CA9C2400679401 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				4DC743002633249400E08D83 /* Debugging */,
+				AADB3470270C263C00F052D2 /* NavigationUtil.swift */,
+				AA84A6EF2716DCB1009FD357 /* Decoder.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		AA72F13828FECFB20024215E /* HSAappXCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5589FC152924A16700BA4CD8 /* XCUITestsAppFlowTests.swift */,
+				557AB4C9291E9B3600CE1DD9 /* XCUITestsFAQFlowTests.swift */,
+				AA72F13B28FECFB20024215E /* XCUITestsLaunchTests.swift */,
+			);
+			path = HSAappXCUITests;
+			sourceTree = "<group>";
+		};
+		AAECE0BE2860B53A008150F5 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				AAECE0C12860B570008150F5 /* ContributionSummaryDataModel.swift */,
+				AAECE0C32860B59E008150F5 /* AccountSummaryDataModel.swift */,
+				AAECE0C52860B5F1008150F5 /* TransactionSummaryDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		AB0240160F9705E925651F9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A762E70F7C6D4C40BEB15780 /* Pods-HSAapp.debug.xcconfig */,
+				C53AA0543FD6BDD4E27E33E3 /* Pods-HSAapp.app store.xcconfig */,
+				80A91C050BA73520861D73CA /* Pods-HSAapp.beta.xcconfig */,
+				953BB6F9D34D428C7CF870AD /* Pods-HSAapp.beta - debug.xcconfig */,
+				556E6F1B7D83CC53302E92C2 /* Pods-HSAapp.dev.xcconfig */,
+				B944B9B1AF8112D8B380EDA7 /* Pods-HSAappTests.debug.xcconfig */,
+				F5655633C2DDDAE711B71EF8 /* Pods-HSAappTests.app store.xcconfig */,
+				2645D0B9D1B86DC36E37B16F /* Pods-HSAappTests.beta.xcconfig */,
+				D9F7AE8C4B7DC83D7CFDD9DA /* Pods-HSAappTests.beta - debug.xcconfig */,
+				8F86B181347D7A72AE471785 /* Pods-HSAappTests.dev.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DAEEC5D25B7568000AE7FC1 /* HSAapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DAEEC8325B7568000AE7FC1 /* Build configuration list for PBXNativeTarget "HSAapp" */;
+			buildPhases = (
+				618DEBD962B73D088B5070E3 /* [CP] Check Pods Manifest.lock */,
+				4F6DECBC26A175CB00EC35E0 /* Setup Firebase Environment */,
+				4F01EA2C26A420B100E6CA19 /* Run SwiftLint */,
+				4DAEEC5A25B7568000AE7FC1 /* Sources */,
+				4DAEEC5B25B7568000AE7FC1 /* Frameworks */,
+				4DAEEC5C25B7568000AE7FC1 /* Resources */,
+				71882AF5798AEF1A1966E741 /* [CP] Embed Pods Frameworks */,
+				4F6DECB426A0817600EC35E0 /* Setup Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSAapp;
+			packageProductDependencies = (
+				4F7AECD3275E2CE9007178E6 /* KeychainAccess */,
+				5589FC1C2924F81800BA4CD8 /* TextView */,
+			);
+			productName = Zenda;
+			productReference = 4DAEEC5E25B7568000AE7FC1 /* HSAapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55099FD62923E45B008738C6 /* HSAappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55099FDD2923E45B008738C6 /* Build configuration list for PBXNativeTarget "HSAappTests" */;
+			buildPhases = (
+				2BF9277BD43250EAA4A4A170 /* [CP] Check Pods Manifest.lock */,
+				55099FD32923E45B008738C6 /* Sources */,
+				55099FD42923E45B008738C6 /* Frameworks */,
+				55099FD52923E45B008738C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55099FDC2923E45B008738C6 /* PBXTargetDependency */,
+			);
+			name = HSAappTests;
+			productName = ZendaTests;
+			productReference = 55099FD72923E45B008738C6 /* HSAappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA72F13628FECFB20024215E /* HSAappXCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA72F13F28FECFB20024215E /* Build configuration list for PBXNativeTarget "HSAappXCUITests" */;
+			buildPhases = (
+				AA72F13328FECFB20024215E /* Sources */,
+				AA72F13428FECFB20024215E /* Frameworks */,
+				AA72F13528FECFB20024215E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA72F13E28FECFB20024215E /* PBXTargetDependency */,
+			);
+			name = HSAappXCUITests;
+			productName = ZendaXCUITests;
+			productReference = AA72F13728FECFB20024215E /* HSAappXCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DAEEC5625B7568000AE7FC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					4DAEEC5D25B7568000AE7FC1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					55099FD62923E45B008738C6 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4DAEEC5D25B7568000AE7FC1;
+					};
+					AA72F13628FECFB20024215E = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1340;
+						TestTargetID = 4DAEEC5D25B7568000AE7FC1;
+					};
+				};
+			};
+			buildConfigurationList = 4DAEEC5925B7568000AE7FC1 /* Build configuration list for PBXProject "HSAapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DAEEC5525B7568000AE7FC1;
+			packageReferences = (
+				4FB93C5B2701AF0400FDCA21 /* XCRemoteSwiftPackageReference "TextView" */,
+				4F7AECD2275E2CE9007178E6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			productRefGroup = 4DAEEC5F25B7568000AE7FC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DAEEC5D25B7568000AE7FC1 /* HSAapp */,
+				AA72F13628FECFB20024215E /* HSAappXCUITests */,
+				55099FD62923E45B008738C6 /* HSAappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DAEEC5C25B7568000AE7FC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D89B55426151A0C00D2FB73 /* Poppins-Black.ttf in Resources */,
+				4D89B55526151A0C00D2FB73 /* Poppins-BlackItalic.ttf in Resources */,
+				4D89B55626151A0C00D2FB73 /* Poppins-Bold.ttf in Resources */,
+				4D89B55726151A0C00D2FB73 /* Poppins-BoldItalic.ttf in Resources */,
+				4D89B55826151A0C00D2FB73 /* Poppins-ExtraBold.ttf in Resources */,
+				4D89B55926151A0C00D2FB73 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				4D89B55A26151A0C00D2FB73 /* Poppins-ExtraLight.ttf in Resources */,
+				4D89B55B26151A0C00D2FB73 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				4D89B55C26151A0C00D2FB73 /* Poppins-Italic.ttf in Resources */,
+				554A4E652923F8C7001C36E0 /* Firebase in Resources */,
+				4D89B55D26151A0C00D2FB73 /* Poppins-Light.ttf in Resources */,
+				4D89B55E26151A0C00D2FB73 /* Poppins-LightItalic.ttf in Resources */,
+				4D89B55F26151A0C00D2FB73 /* Poppins-Medium.ttf in Resources */,
+				4D89B56026151A0C00D2FB73 /* Poppins-MediumItalic.ttf in Resources */,
+				4D89B56126151A0C00D2FB73 /* Poppins-Regular.ttf in Resources */,
+				4D89B56226151A0C00D2FB73 /* Poppins-SemiBold.ttf in Resources */,
+				4D89B56326151A0C00D2FB73 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				4D89B56426151A0C00D2FB73 /* Poppins-Thin.ttf in Resources */,
+				4D89B56526151A0C00D2FB73 /* Poppins-ThinItalic.ttf in Resources */,
+				4D89B56626151A0C00D2FB73 /* OpenSans-Bold.ttf in Resources */,
+				4D89B56726151A0C00D2FB73 /* OpenSans-BoldItalic.ttf in Resources */,
+				4D89B56826151A0C00D2FB73 /* OpenSans-ExtraBold.ttf in Resources */,
+				4D89B56926151A0C00D2FB73 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				4D89B56A26151A0C00D2FB73 /* OpenSans-Italic.ttf in Resources */,
+				4D89B56B26151A0C00D2FB73 /* OpenSans-Light.ttf in Resources */,
+				4D89B56C26151A0C00D2FB73 /* OpenSans-LightItalic.ttf in Resources */,
+				4D89B56D26151A0C00D2FB73 /* OpenSans-Regular.ttf in Resources */,
+				4D89B56E26151A0C00D2FB73 /* OpenSans-SemiBold.ttf in Resources */,
+				4D89B56F26151A0C00D2FB73 /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				4D5BB8BB25DC5DED00541813 /* Colors.xcassets in Resources */,
+				4DAEEC9325B75BDA00AE7FC1 /* LaunchScreen.storyboard in Resources */,
+				4DBED41D25D5A2F3001E882C /* dotsfont.ttf in Resources */,
+				4DAEEC6925B7568000AE7FC1 /* Preview Assets.xcassets in Resources */,
+				4DAEEC6625B7568000AE7FC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55099FD52923E45B008738C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA72F13528FECFB20024215E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BF9277BD43250EAA4A4A170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HSAappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F01EA2C26A420B100E6CA19 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "podSwiftlint=\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\nif [ -f \"$podSwiftlint\" ]; then\n    $podSwiftlint\nelse\n    echo \"'warning: Cannot find SwiftLint in the expected Cocoapods location.\"\nfi\n";
+		};
+		4F6DECB426A0817600EC35E0 /* Setup Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}\n",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Setup Crashlytics";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ] \nthen\n    \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nfi\n";
+		};
+		4F6DECBC26A175CB00EC35E0 /* Setup Firebase Environment */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Firebase Environment";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info\n\nGOOGLESERVICE_INFO_BETA=${PROJECT_DIR}/${TARGET_NAME}/Configs/Firebase/${GOOGLESERVICE_INFO_PLIST}.beta.plist\nGOOGLESERVICE_INFO_DEV=${PROJECT_DIR}/${TARGET_NAME}/Configs/Firebase/${GOOGLESERVICE_INFO_PLIST}.dev.plist\nGOOGLESERVICE_INFO_APPSTORE=${PROJECT_DIR}/${TARGET_NAME}/Configs/Firebase/${GOOGLESERVICE_INFO_PLIST}.appstore.plist\n\n# Make sure the dev version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEV}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEV ]\nthen\n    echo \"No Dev GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Make sure the beta version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_BETA}\"\nif [ ! -f $GOOGLESERVICE_INFO_BETA ]\nthen\n    echo \"No Beta GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Make sure the appstore version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_APPSTORE}\"\nif [ ! -f $GOOGLESERVICE_INFO_APPSTORE ]\nthen\n    echo \"No Appstore GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST}.plist to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the correct GoogleService-Info.plist based on current build configuration\nif [ \"${CONFIGURATION}\" == \"App Store\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_APPSTORE}\"\n    cp \"${GOOGLESERVICE_INFO_APPSTORE}\" \"${PLIST_DESTINATION}/${GOOGLESERVICE_INFO_PLIST}.plist\"\nelif [ \"${CONFIGURATION}\" == \"Beta\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_BETA}\"\n    cp \"${GOOGLESERVICE_INFO_BETA}\" \"${PLIST_DESTINATION}/${GOOGLESERVICE_INFO_PLIST}.plist\"\nelse \n    echo \"Using ${GOOGLESERVICE_INFO_DEV}\"\n    cp \"${GOOGLESERVICE_INFO_DEV}\" \"${PLIST_DESTINATION}/${GOOGLESERVICE_INFO_PLIST}.plist\"\nfi\n\n";
+		};
+		618DEBD962B73D088B5070E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HSAapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71882AF5798AEF1A1966E741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HSAapp/Pods-HSAapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HSAapp/Pods-HSAapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HSAapp/Pods-HSAapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DAEEC5A25B7568000AE7FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDE240A26E611850008D240 /* Constants.swift in Sources */,
+				AA20CFDE274E67AF00152C62 /* SupportSourceScreenName.swift in Sources */,
+				4FB95696272D16E90052B598 /* Notifications.swift in Sources */,
+				4FF5200026E5079100E64D72 /* WebView.swift in Sources */,
+				4FC731A026FF152400A51595 /* ModalView.swift in Sources */,
+				4F01EA4B26A95CC300E6CA19 /* Analytics.swift in Sources */,
+				4FE569B827037DE900869A06 /* SupportRequestType.swift in Sources */,
+				4F70BC9226C2FA93000B81C4 /* TransactionListEmptyView.swift in Sources */,
+				4DC74307263324C500E08D83 /* LogViewModel.swift in Sources */,
+				4D9C303325C1DEEC0080C52E /* Header.swift in Sources */,
+				4D0A19A925E6F34600E093B9 /* AlertExtension.swift in Sources */,
+				4FB95692272D16240052B598 /* HSAAppApplication.swift in Sources */,
+				4DBED43C25DA8B77001E882C /* EmailValidation.swift in Sources */,
+				4DBED43725DA8B37001E882C /* ValidationResult.swift in Sources */,
+				AA0306212775E6E900A82AB8 /* UImageExtension.swift in Sources */,
+				4D821F1B264C5AE400D50000 /* DashboardView.swift in Sources */,
+				4DA1DB4D2694B39200AB90DD /* PullToRefresh.swift in Sources */,
+				4FBA7C1F26ADB1AE00C98DF8 /* StateButton.swift in Sources */,
+				4DC74302263324AF00E08D83 /* LogView.swift in Sources */,
+				4F70BC9626C3B898000B81C4 /* TransactionsManaging.swift in Sources */,
+				4FC731A526FF152400A51595 /* ModalStyle.swift in Sources */,
+				4DBED44125DA9483001E882C /* PasswordValidation.swift in Sources */,
+				4DA2CD04267D105A0046E7A3 /* MenuViewModel.swift in Sources */,
+				4D821F14264B14E300D50000 /* DashboardTileViewModel.swift in Sources */,
+				4DE6A3432666B50500E89A0E /* AccountSummary.swift in Sources */,
+				AAD5B1BA26C6908F00942DFD /* StringExtension.swift in Sources */,
+				4FF51FFC26E25F1800E64D72 /* HSAAppNavigationBar.swift in Sources */,
+				4FC731A226FF152400A51595 /* DefaultModalStyle.swift in Sources */,
+				4D9C304125C1E4570080C52E /* RepositoryService.swift in Sources */,
+				4DC3ED652649AAD30041C024 /* MainViewModel.swift in Sources */,
+				4F2707A726EA411000830FFA /* CustomDivider.swift in Sources */,
+				4D821F12264B14D600D50000 /* DashboardTileView.swift in Sources */,
+				4FF8A0F22775A42500442ACC /* ScrollViewIfNeeded.swift in Sources */,
+				4FAD18BE275F8D5A0085C7C1 /* UserCredentials.swift in Sources */,
+				4F761FB526CBBD9600AE8EE1 /* AccountType.swift in Sources */,
+				B970F194274E67AB00A0AD8E /* Bundle+Version.swift in Sources */,
+				AAECE0C42860B59E008150F5 /* AccountSummaryDataModel.swift in Sources */,
+				4FBE54FC26BECEE200FECBFE /* AccountNumbersView.swift in Sources */,
+				4D09D5D6269F2CDB00769013 /* Formatters.swift in Sources */,
+				4FD89EC926F1E2EC0058A280 /* UserDefaultsManager.swift in Sources */,
+				4F761FB326CBBCCD00AE8EE1 /* AccountDetails.swift in Sources */,
+				4DAF3C95264071DB00EEF74E /* Account.swift in Sources */,
+				4DA661F826BB11BC004458A9 /* SwiftUIPullToRefresh.swift in Sources */,
+				4D48BC042653F02500C33A35 /* TransactionListViewModel.swift in Sources */,
+				4FD8250D274502F600B3FFB2 /* View+CardView.swift in Sources */,
+				4FB215B426F497FD00A8B7B5 /* ContactUsView.swift in Sources */,
+				4DBD5F7925B8BDF300424B90 /* AppDelegate.swift in Sources */,
+				4D821F23264D7B9000D50000 /* TransactionSummaryViewModel.swift in Sources */,
+				4DBED42825D6E8B3001E882C /* ButtonState.swift in Sources */,
+				4F33857827B5283C00103DCB /* AlertView.swift in Sources */,
+				4F30E7FC2769D8AF00F93CAC /* View+EmbedInScrollView.swift in Sources */,
+				4F7AECD6275E2CFD007178E6 /* KeychainManager.swift in Sources */,
+				4FBEF2A7270072D200571B08 /* View+CornerRadius.swift in Sources */,
+				4FE569B627037DDE00869A06 /* SupportRequest.swift in Sources */,
+				4FC731A826FF152400A51595 /* Environment+ModalPresentation.swift in Sources */,
+				4DC3ED632649A67F0041C024 /* MainView.swift in Sources */,
+				4F01EA5626A9738100E6CA19 /* AnalyticsScreen.swift in Sources */,
+				4F264CE3276B47AB0070F1AC /* View+ReadSize.swift in Sources */,
+				AAECE0C62860B5F1008150F5 /* TransactionSummaryDataModel.swift in Sources */,
+				4D02454A25C1EB3100A69D8E /* Styles.swift in Sources */,
+				4F01EA4F26A9675B00E6CA19 /* AnalyticsEventName.swift in Sources */,
+				4F769AF8279DE95C003B9869 /* GenericError.swift in Sources */,
+				4DE6A34B266E5E7C00E89A0E /* DashboardSummaryMock.swift in Sources */,
+				4DC3ED5F26443DEC0041C024 /* Dispatch.swift in Sources */,
+				4DE6A3472668146F00E89A0E /* APIExtensions.swift in Sources */,
+				4FB95694272D169D0052B598 /* main.swift in Sources */,
+				4FC731A326FF152400A51595 /* Environment+ModalStyle.swift in Sources */,
+				AA84A6F02716DCB1009FD357 /* Decoder.swift in Sources */,
+				4D00858925CC6AC60006345E /* SplashViewModel.swift in Sources */,
+				4FB93C5A2701A75200FDCA21 /* ContactUsViewModel.swift in Sources */,
+				4FBEF2A9270072F700571B08 /* View+Border.swift in Sources */,
+				4F01EA5426A9705200E6CA19 /* View+Analytics.swift in Sources */,
+				4FD89ED326F207A60058A280 /* PrimaryButtonStyle.swift in Sources */,
+				4DBD5F7425B8BDD500424B90 /* SceneDelegate.swift in Sources */,
+				4FBE54FA26BECA0500FECBFE /* HsaAccountViewModel.swift in Sources */,
+				4DA2CCFA267B8C130046E7A3 /* HsaAccountView.swift in Sources */,
+				4DBD5FBC25BE079C00424B90 /* ViewExtensions.swift in Sources */,
+				4F70BC8D26C1A79B000B81C4 /* DateExtensions.swift in Sources */,
+				4D821F21264D7B7600D50000 /* TransactionSummaryView.swift in Sources */,
+				4DBED43225D6F10F001E882C /* ValidatedTextField.swift in Sources */,
+				4FC731A426FF152400A51595 /* View+ModalStyle.swift in Sources */,
+				4FBE54FE26BED4FD00FECBFE /* ProgressBarView.swift in Sources */,
+				4D48BC022653F01700C33A35 /* TransactionListScreen.swift in Sources */,
+				4F5B33FC27F1A24C00C68FA9 /* View+Alert.swift in Sources */,
+				4FBA7C2126ADB1C300C98DF8 /* ActionButton.swift in Sources */,
+				4D48BC0E26540DD400C33A35 /* HostingController.swift in Sources */,
+				55099F722923CD6B008738C6 /* URLLink.swift in Sources */,
+				4FDE241426E63E8F0008D240 /* Binding+Callback.swift in Sources */,
+				4D12F5CF25E5905A0048A2A8 /* KeychainService.swift in Sources */,
+				4D89B5252614BAC900D2FB73 /* ColorExtensions.swift in Sources */,
+				4FA6FCD627463188007C30ED /* NavigationLazyView.swift in Sources */,
+				AADB3471270C263C00F052D2 /* NavigationUtil.swift in Sources */,
+				4F5B33FA27F0443400C68FA9 /* NetworkStatusService.swift in Sources */,
+				4DC3ED6126495D5B0041C024 /* Sync.swift in Sources */,
+				4D12F5D525E597090048A2A8 /* ActivityIndicator.swift in Sources */,
+				4FBE550026C012A300FECBFE /* TransactionListView.swift in Sources */,
+				4FF602EC26B14978004D1690 /* UINavigationController+EmptyBackButton.swift in Sources */,
+				4D00858025CC63EA0006345E /* SplashView.swift in Sources */,
+				4FB95698272D21D90052B598 /* UserManager.swift in Sources */,
+				4FA44DC426EBDE690098CCC8 /* View+WhenRedacted.swift in Sources */,
+				4DBD5F9725B8D02B00424B90 /* Logging.swift in Sources */,
+				4FC731A726FF152400A51595 /* ModalPresentationMode.swift in Sources */,
+				4FC731A126FF152400A51595 /* AnyModalStyle.swift in Sources */,
+				4FD0252A26EBE5E100641A46 /* EnumDecodable.swift in Sources */,
+				4F7A0439275BCF7C00BD5A4B /* RandomAccessCollection+Last.swift in Sources */,
+				4F761FB026CBA39600AE8EE1 /* RealmManager.swift in Sources */,
+				4FC731A626FF152400A51595 /* ModalStyleConfiguration.swift in Sources */,
+				4D821F1D264C5AEF00D50000 /* DashboardViewModel.swift in Sources */,
+				4FC7319F26FF152400A51595 /* View+Modal.swift in Sources */,
+				4F01EA4926A95AF500E6CA19 /* UserDefaults.swift in Sources */,
+				55099F702923BADD008738C6 /* GenericResponse.swift in Sources */,
+				4FD89EC726F1E2DF0058A280 /* UserDefaultsManaging.swift in Sources */,
+				4F47617426D777B000E822D1 /* ArrayExtensions.swift in Sources */,
+				4FD89ED526F20AC10058A280 /* OnboardingLinkButtonStyle.swift in Sources */,
+				4D851A852628C950001EAB41 /* EnvironmentConfiguration.swift in Sources */,
+				4F01EA3D26A950B900E6CA19 /* AnalyticsType.swift in Sources */,
+				4D02458825C89F3900A69D8E /* Router.swift in Sources */,
+				4D821F1F264D77A600D50000 /* TransactionSummary.swift in Sources */,
+				4D02455425C3340000A69D8E /* PersistenceService.swift in Sources */,
+				4F70BC9426C2FC3A000B81C4 /* TransactionSection.swift in Sources */,
+				4F01EA4D26A9674900E6CA19 /* AnalyticsEvent.swift in Sources */,
+				4FBE54F826BEC9ED00FECBFE /* AccountHeaderView.swift in Sources */,
+				4DA2CD02267D104B0046E7A3 /* MenuView.swift in Sources */,
+				4D02454F25C333AC00A69D8E /* APIService.swift in Sources */,
+				AAECE0C22860B570008150F5 /* ContributionSummaryDataModel.swift in Sources */,
+				4F01EA5126A96AC200E6CA19 /* App+Injection.swift in Sources */,
+				AA82435A2796ED4100B22659 /* PDFView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55099FD32923E45B008738C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B6C4C22923F0D10036E472 /* HSAAccountScreenTests.swift in Sources */,
+				55099FDA2923E45B008738C6 /* DashboardScreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA72F13328FECFB20024215E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5589FC162924A16700BA4CD8 /* XCUITestsAppFlowTests.swift in Sources */,
+				AA72F13C28FECFB20024215E /* XCUITestsLaunchTests.swift in Sources */,
+				557AB4CA291E9B3600CE1DD9 /* XCUITestsFAQFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55099FDC2923E45B008738C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DAEEC5D25B7568000AE7FC1 /* HSAapp */;
+			targetProxy = 55099FDB2923E45B008738C6 /* PBXContainerItemProxy */;
+		};
+		AA72F13E28FECFB20024215E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DAEEC5D25B7568000AE7FC1 /* HSAapp */;
+			targetProxy = AA72F13D28FECFB20024215E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D4FFD82260247FD00F84B73 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D851A582628B549001EAB41 /* Beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUNDLE_ID = com.hsaapp.beta;
+				APP_DISPLAY_NAME = "";
+				"APP_DISPLAY_NAME[arch=*]" = "HSAapp Demo";
+				APP_NAME = "HSAapp (Beta)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.beta;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		4D4FFD83260247FD00F84B73 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A91C050BA73520861D73CA /* Pods-HSAapp.beta.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HSAapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.beta;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Beta;
+		};
+		4D4FFD8C26024E8D00F84B73 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D851A572628B533001EAB41 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUNDLE_ID = com.hsaapp.dev;
+				APP_DISPLAY_NAME = "";
+				"APP_DISPLAY_NAME[arch=*]" = "HSAapp Dev";
+				APP_NAME = "HSAapp (Dev)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.dev;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Dev;
+		};
+		4D4FFD8D26024E8D00F84B73 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556E6F1B7D83CC53302E92C2 /* Pods-HSAapp.dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HSAapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-ObjC",
+				);
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Dev;
+		};
+		4DAEEC8125B7568000AE7FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D851A572628B533001EAB41 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUNDLE_ID = com.hsaapp.debug;
+				APP_DISPLAY_NAME = "";
+				"APP_DISPLAY_NAME[arch=*]" = "HSAapp Debug";
+				APP_NAME = "HSAapp (Debug)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DAEEC8225B7568000AE7FC1 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D851A592628B555001EAB41 /* AppStore.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUNDLE_ID = com.hsaapp.appstore;
+				APP_DISPLAY_NAME = "";
+				"APP_DISPLAY_NAME[arch=*]" = HSAapp;
+				APP_NAME = HSAapp;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.appstore;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		4DAEEC8425B7568000AE7FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A762E70F7C6D4C40BEB15780 /* Pods-HSAapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
+				DEVELOPMENT_TEAM = YXP66Q7F74;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HSAapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4DAEEC8525B7568000AE7FC1 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53AA0543FD6BDD4E27E33E3 /* Pods-HSAapp.app store.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
+				DEVELOPMENT_TEAM = YXP66Q7F74;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HSAapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstore;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.appstore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "App Store";
+		};
+		4F67AF68269EBD9600422416 /* Beta - Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D851A582628B549001EAB41 /* Beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUNDLE_ID = com.hsaapp.beta;
+				APP_DISPLAY_NAME = "";
+				"APP_DISPLAY_NAME[arch=*]" = "HSAapp Demo";
+				APP_NAME = "HSAapp (Beta)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.beta;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = "Beta - Debug";
+		};
+		4F67AF69269EBD9600422416 /* Beta - Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953BB6F9D34D428C7CF870AD /* Pods-HSAapp.beta - debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HSAapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.beta;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Beta - Debug";
+		};
+		55099FDE2923E45B008738C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B944B9B1AF8112D8B380EDA7 /* Pods-HSAappTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
+			};
+			name = Debug;
+		};
+		55099FDF2923E45B008738C6 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5655633C2DDDAE711B71EF8 /* Pods-HSAappTests.app store.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		55099FE02923E45B008738C6 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2645D0B9D1B86DC36E37B16F /* Pods-HSAappTests.beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		55099FE12923E45B008738C6 /* Beta - Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F7AE8C4B7DC83D7CFDD9DA /* Pods-HSAappTests.beta - debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Beta - Debug";
+		};
+		55099FE22923E45B008738C6 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F86B181347D7A72AE471785 /* Pods-HSAappTests.dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Dev;
+		};
+		AA72F14028FECFB20024215E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HSAapp;
+			};
+			name = Debug;
+		};
+		AA72F14128FECFB20024215E /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HSAapp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		AA72F14228FECFB20024215E /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HSAapp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		AA72F14328FECFB20024215E /* Beta - Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HSAapp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Beta - Debug";
+		};
+		AA72F14428FECFB20024215E /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HSAapp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Dev;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DAEEC5925B7568000AE7FC1 /* Build configuration list for PBXProject "HSAapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAEEC8125B7568000AE7FC1 /* Debug */,
+				4DAEEC8225B7568000AE7FC1 /* App Store */,
+				4D4FFD82260247FD00F84B73 /* Beta */,
+				4F67AF68269EBD9600422416 /* Beta - Debug */,
+				4D4FFD8C26024E8D00F84B73 /* Dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "App Store";
+		};
+		4DAEEC8325B7568000AE7FC1 /* Build configuration list for PBXNativeTarget "HSAapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAEEC8425B7568000AE7FC1 /* Debug */,
+				4DAEEC8525B7568000AE7FC1 /* App Store */,
+				4D4FFD83260247FD00F84B73 /* Beta */,
+				4F67AF69269EBD9600422416 /* Beta - Debug */,
+				4D4FFD8D26024E8D00F84B73 /* Dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "App Store";
+		};
+		55099FDD2923E45B008738C6 /* Build configuration list for PBXNativeTarget "HSAappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55099FDE2923E45B008738C6 /* Debug */,
+				55099FDF2923E45B008738C6 /* App Store */,
+				55099FE02923E45B008738C6 /* Beta */,
+				55099FE12923E45B008738C6 /* Beta - Debug */,
+				55099FE22923E45B008738C6 /* Dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "App Store";
+		};
+		AA72F13F28FECFB20024215E /* Build configuration list for PBXNativeTarget "HSAappXCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA72F14028FECFB20024215E /* Debug */,
+				AA72F14128FECFB20024215E /* App Store */,
+				AA72F14228FECFB20024215E /* Beta */,
+				AA72F14328FECFB20024215E /* Beta - Debug */,
+				AA72F14428FECFB20024215E /* Dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "App Store";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F7AECD2275E2CE9007178E6 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		4FB93C5B2701AF0400FDCA21 /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kenmueller/TextView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F7AECD3275E2CE9007178E6 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F7AECD2275E2CE9007178E6 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		5589FC1C2924F81800BA4CD8 /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FB93C5B2701AF0400FDCA21 /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4DAEEC5625B7568000AE7FC1 /* Project object */;
+}

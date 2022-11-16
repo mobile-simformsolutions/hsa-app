@@ -1,0 +1,9 @@
+//
+//  Beta.xcconfig
+//
+
+ROOT_URL = root_url
+
+// App Settings
+APP_NAME = HSAapp (Beta)
+APP_BUNDLE_ID = com.hsaapp.beta

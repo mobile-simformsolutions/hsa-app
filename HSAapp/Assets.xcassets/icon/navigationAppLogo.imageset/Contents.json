@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logo -  iOS navigation bar (top).svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

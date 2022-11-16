@@ -1,0 +1,9 @@
+//
+//  Development.xcconfig
+//
+
+ROOT_URL = root_url
+
+// App Settings
+APP_NAME = HSAapp (Dev)
+APP_BUNDLE_ID = com.hsaapp.dev
