@@ -109,11 +109,11 @@ private extension ContactUsView {
                 .onboardingStyle(width: 225, height: 225)
                 .padding()
 
-            Text(viewModel.title)
+            Text(appString.contactusText())
                 .styled(.primary)
 
-            Text(viewModel.subtitle)
-                .styled(.customFull(.openSans, .regular, 16, .center, secondaryTextColor))
+            Text(appString.greatExperince())
+                .styled(.customFull(.poppins, .regular, 16, .center, secondaryTextColor))
                 .padding(.bottom, 10)
                 .fixedSize(horizontal: false, vertical: true)
 
@@ -123,8 +123,8 @@ private extension ContactUsView {
                         viewModel.validateForm(with: viewModel.formText)
                     },
                     isEditing: $isEditing,
-                    placeholder: "Description of problem goes here…",
-                    font: .custom(.openSans, weight: .regular, size: 16),
+                    placeholder: appString.descriptionOfProblem(),
+                    font: .custom(.poppins, weight: .regular, size: 16),
                     textColor: Color.secondaryText.uiColor(),
                     keyboardDismissMode: .interactive,
                     shouldChange: { _, string in
@@ -135,7 +135,7 @@ private extension ContactUsView {
 
                 StateButton(
                     state: $viewModel.sendButtonState,
-                    defaultState: .normal(viewModel.buttonText),
+                    defaultState: .normal(appString.sendMessage()),
                     shouldShowErrorState: .constant(false)
                 ) {
                     isEditing = false
@@ -174,17 +174,17 @@ private extension ContactUsView {
                 .aspectRatio(contentMode: .fit)
                 .padding()
 
-            Text("SUCCESS!")
+            Text(appString.successText())
                 .styled(.primary)
                 .foregroundColor(primaryTextColor)
 
-            Text((theme == .dark) ? "Your message has been sent! We will get back to you ASAP!" : "We will contact you via email within 48 hours.")
-                .styled(.customFull(.openSans, .regular, 15, .center, secondaryTextColor))
+            Text((theme == .dark) ? appString.yourMessage() : appString.weWillContact())
+                .styled(.customFull(.poppins, .regular, 15, .center, secondaryTextColor))
                 .padding(.bottom, 10)
                 .padding(.horizontal)
 
             ActionButton(
-                text: "Continue".uppercased(),
+                text: appString.continue(),
                 action: {
                     switch successAction {
                     case .pop:

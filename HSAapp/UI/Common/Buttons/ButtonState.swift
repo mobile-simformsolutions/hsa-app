@@ -12,12 +12,12 @@ enum ButtonState {
             return part.prefix(1).uppercased() + part.dropFirst()
         }
         if partsCapatilized.isEmpty {
-            return "Check fields"
+            return appString.checkFields()
         } else if partsCapatilized.count == 1 {
-            return "Check \(partsCapatilized.first ?? "")"
+            return appString.checkMessage(partsCapatilized.first ?? "")
         } else {
             let partsJoined = partsCapatilized.joined(separator: ", ")
-            return "Check \(partsJoined)"
+            return appString.checkMessage(partsJoined)
         }
     }
     
@@ -39,7 +39,7 @@ enum ButtonState {
         case .normal(let label), .disabled(let label):
             return label
         case .processing(let label):
-            return label ?? "processing"
+            return label ?? appString.processingMessage()
         }
     }
 }
@@ -71,7 +71,6 @@ struct ApplyButtonState: ViewModifier {
                 return apply(content: content, background: Color("DefaultControlBackground"), disabled: false)
             }
         }
-//        let base = content.modifier(ButtonBase())
         switch state {
         case .normal:
             return apply(content: content, background: Color("DefaultControlBackground"), disabled: false)

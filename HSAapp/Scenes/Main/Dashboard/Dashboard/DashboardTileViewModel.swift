@@ -39,11 +39,11 @@ extension DashboardTileViewModel {
     }
     
     private func hsaTitle(_ accountSummary: AccountSummaryDataModel) -> String {
-        return accountSummary.amount > 0 ? "HSA spending" : "Fund your HSA"
+        return accountSummary.amount > 0 ? appString.hsaSpending() : appString.fundYourHSA()
     }
     
     private func everydayTitle(_ accountSummary: AccountSummaryDataModel) -> String {
-        return "Everyday spending"
+        return appString.everydaySpending()
     }
 }
 
@@ -62,9 +62,9 @@ extension DashboardTileViewModel {
     private func tileSubtitle(_ accountSummary: AccountSummaryDataModel) -> String {
         switch accountSummary.type {
         case .hsa:
-            return accountSummary.amount > 0 ? "Current balance" : "Set your contribution"
+            return accountSummary.amount > 0 ? appString.currentBalance() : appString.setYourContrinution()
         case .everyday:
-            return "Current balance"
+            return appString.currentBalance()
         }
     }
 }

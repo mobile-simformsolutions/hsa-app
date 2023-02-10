@@ -127,7 +127,6 @@ struct SecureTextField: View {
             .padding(.horizontal, 10)
 
             Button(action: {
-//                self.updateMask(newValue: !mask)
                 self.mask.toggle()
             }) {
                 EyeImage(type: mask ? .normal : .slashed)
@@ -184,7 +183,7 @@ struct CurrencyTextField: View {
     }
     
     private func format(string: String) -> String {
-        let digits = string.components(separatedBy: CharacterSet(charactersIn: "0123456789").inverted).joined().replacingOccurrences(of: ",", with: "")
+        let digits = string.components(separatedBy: CharacterSet(charactersIn: Constants.phoneNumberFormate).inverted).joined().replacingOccurrences(of: ",", with: "")
         let value = (Decimal(string: digits) ?? 0) / 100.0
         let isInitialValueZero = value == 0 && previousText.isEmpty
         if isInitialValueZero {
@@ -232,7 +231,6 @@ struct PasswordTextField: View {
     var body: some View {
         let showSecure = !password.wrappedValue.isEmpty && mask
         let secureFont = Font.custom("dotsfont", size: UIFont.labelFontSize)
-//        let font = secured ? Font.custom("dots", size: 12) :  font(.body)
         VStack {
             HStack {
                 TextField(placeholder, text: password)
@@ -293,12 +291,11 @@ struct PasswordRequirementRow: View {
                         .frame(width: 14, height: 14, alignment: .center)
                 }
                 Text(passwordRuleResult.description)
-                    .font(Font.custom(.openSans, weight: .regular, size: 15))
+                    .font(Font.custom(.poppins, weight: .regular, size: 15))
                     .multilineTextAlignment(.leading)
                 Spacer()
             }.padding(.horizontal, 4.0)
         }
-        // .padding(.vertical, -10)
     }
     
     private func format(image: Image, color: Color) -> some View {
@@ -372,7 +369,7 @@ struct TextFieldWithPickerView: UIViewRepresentable {
     var toolbar: UIToolbar {
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: textField.frame.size.width, height: 45))
         let flexButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(textField.doneButtonTapped(button:)))
+        let doneButton = UIBarButtonItem(title: appString.doneMessage(), style: .done, target: self, action: #selector(textField.doneButtonTapped(button:)))
         doneButton.tintColor = .white
         toolBar.isTranslucent = false
         toolBar.barTintColor = .lightGray
@@ -421,11 +418,3 @@ struct TextFieldWithPickerView: UIViewRepresentable {
         }
     }
 }
-
-// #if DEBUG
-// struct SwiftUIView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SecureTextField()
-//    }
-// }
-// #endif

@@ -62,13 +62,5 @@ class Logging {
         } else {
             return "No Log Data"
         }
-//        for logFilePath in logFilePaths {
-//            let fileURL = NSURL(fileURLWithPath: logFilePath)
-//            if let logFileData = try? NSData(contentsOfURL: fileURL, options: NSDataReadingOptions.DataReadingMappedIfSafe) {
-//                // Insert at front to reverse the order, so that oldest logs appear first.
-//                logFileDataArray.insert(logFileData, atIndex: 0)
-//            }
-//        }
-//        return logFileDataArray
     }
 }

@@ -21,15 +21,15 @@ struct AccountNumbersView: View {
 
             HStack {
                 if !routingNumber.isEmpty {
-                    Text("Routing: \(isMasked ? maskedNumber(number: routingNumber): routingNumber)")
-                        .font(Font.custom(.openSans, weight: .regular, size: 15))
+                    Text(appString.routingText(isMasked ? maskedNumber(number: routingNumber): routingNumber))
+                        .font(Font.custom(.poppins, weight: .regular, size: 15))
                         .foregroundColor(Color.secondaryText)
                     Spacer()
                 }
                 
                 HStack(spacing: 0) {
-                    Text("Account: \(isMasked ? maskedNumber(number: accountNumber): accountNumber )")
-                        .font(Font.custom(.openSans, weight: .regular, size: 15))
+                    Text(appString.accountText(isMasked ? maskedNumber(number: accountNumber): accountNumber))
+                        .font(Font.custom(.poppins, weight: .regular, size: 15))
                         .foregroundColor(Color.secondaryText)
                     Button(action: {
                         isMasked.toggle()

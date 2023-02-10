@@ -59,7 +59,7 @@ private extension TransactionListView {
     func transactionsSection(section: TransactionSection) -> some View {
         Section(header: sectionHeader(title: section.sectionName)) {
             if section.transactions.isEmpty {
-                Text("No transactions yet")
+                Text(appString.noTransactionYet())
                     .padding()
             } else {
                 ForEach(section.transactions, id: \.id) { transaction in
@@ -105,9 +105,7 @@ private extension TransactionListView {
             guard moreAvailable else {
                 return
             }
-
             loadMore()
-            print("DEBUG: loading more content")
         }
     }
 }
@@ -149,13 +147,13 @@ private extension TransactionListView {
                 HStack {
                     Spacer()
                     ActivityIndicator(isAnimating: .constant(true), style: .medium)
-                    Text("Loading...").styled(.customFull(.poppins, .medium, 18, .center, Color.navigationBackground))
+                Text(appString.loading()).styled(.customFull(.poppins, .medium, 18, .center, Color.navigationBackground))
                     Spacer()
                 }.padding(.vertical)
             ) {}
         case let .items(moreAvailable):
             if let loadMore = onLoadMore, moreAvailable {
-                let button = ActionButton(text: "Load More") {
+                let button = ActionButton(text: appString.loadMore()) {
                     loadMore()
                 }
                 .padding(10)
@@ -166,7 +164,7 @@ private extension TransactionListView {
             Section(footer:
                 HStack {
                     Spacer()
-                    Text("Failed to load data: \(error.localizedDescription)")
+                Text(appString.failedToLoad(error.localizedDescription))
                     Spacer()
                 }
             ) {}
@@ -183,7 +181,7 @@ private extension TransactionListView {
         HStack {
             Spacer()
             VStack {
-                Text("Loading...")
+                Text(appString.loading())
                     .styled(.customFull(.poppins, .medium, 15, .center, Color.navigationBackground))
                 if #available(iOS 15.0, *) {
                     ProgressView()
@@ -230,8 +228,8 @@ struct TransactionListView_Previews: PreviewProvider {
                 listState: .constant(.items(moreAvailable: true)),
                 wrapInScrollView: true,
                 emptyViewImage: Image("CarouselPage1"),
-                emptyViewTitle: "Check back soon",
-                emptyViewSubTitle: "Your employer has set up your account but they \n have not yet made a contribution to your HSA",
+                emptyViewTitle: appString.checkBackSoon(),
+                emptyViewSubTitle: appString.youEmployerHasSetUp(),
                 onLoadMore: { }
             )
         }

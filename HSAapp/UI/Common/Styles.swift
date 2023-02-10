@@ -108,7 +108,7 @@ struct StyleText: ViewModifier {
                 .lineLimit(nil)
         case .onboardingSecondary:
             return content
-                .font(Font.custom(.openSans, weight: .regular, size: 16, relativeTo: .body))
+                .font(Font.custom(.poppins, weight: .regular, size: 16, relativeTo: .body))
                 .foregroundColor(Color.onboardingSecondaryText)
                 .padding(.horizontal)
                 .multilineTextAlignment(.center)
@@ -136,14 +136,14 @@ struct StyleText: ViewModifier {
                 .lineLimit(nil)
         case .secondary:
             return content
-                .font(Font.custom(.openSans, weight: .regular, size: 15, relativeTo: .body))
+                .font(Font.custom(.poppins, weight: .regular, size: 15, relativeTo: .body))
                 .foregroundColor(Color.secondaryText)
                 .padding(.horizontal)
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
         case .secondaryHeading:
             return content
-                .font(Font.custom(.openSans, weight: .semiBold, size: 15))
+                .font(Font.custom(.poppins, weight: .semiBold, size: 15))
                 .foregroundColor(Color.secondaryText)
                 .padding(.horizontal)
                 .multilineTextAlignment(.center)
@@ -229,7 +229,6 @@ struct RoundedBox: ViewModifier {
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.onboardingBorder, lineWidth: 2)
             )
-//            .cornerRadius(10.0)
             Spacer().frame(width: edgePadding, height: edgePadding, alignment: .center)
         }
        

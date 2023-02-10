@@ -19,7 +19,6 @@ struct SplashView: View {
                     Spacer()
                 }
                 Spacer()
-                
                 RouterLink(binding: $splashViewModel.showMainView,
                            destination: NavigationLocation.main(selectedTab: .dashboard).wrappedView(),
                            embedInNavigationController: false)

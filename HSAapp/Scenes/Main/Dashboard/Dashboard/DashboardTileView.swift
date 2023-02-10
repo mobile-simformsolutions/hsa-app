@@ -32,7 +32,7 @@ struct DashboardTileView: View {
                     .styled(.customFull(.poppins, .medium, 16, .leading, Color.secondaryText))
                     .minimumScaleFactor(0.4)
                 Text(viewModel.subtitle)
-                    .styled(.customFull(.openSans, .regular, 13, .leading, Color.secondaryText))
+                    .styled(.customFull(.poppins, .regular, 13, .leading, Color.secondaryText))
                     .fixedSize(horizontal: false, vertical: true)
             }
             .padding(.vertical, 8)

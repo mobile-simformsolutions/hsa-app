@@ -7,8 +7,8 @@ import SwiftUI
 struct Header: View {
     var body: some View {
         VStack(alignment: .center, spacing: nil) {
-            Text("HSA").font(.system(size: 56.0))
-            Text("Get Healthy, Wealthy, & Wize")
+            Text(appString.hsaText()).font(.system(size: 56.0))
+            Text(appString.getHealthyMeessage())
         }
         
     }

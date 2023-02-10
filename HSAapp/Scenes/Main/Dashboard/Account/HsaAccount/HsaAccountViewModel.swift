@@ -10,7 +10,6 @@ class HsaAccountViewModel: ObservableObject {
     
     // MARK: - Variables
     //
-    let balanceLabel = "HSA Balance"
     var contributionSummary: ContributionSummaryDataModel?
     private let dateFormatter = DateFormatter()
     private let currencyFormatter = NumberFormatter.defaultCurrencyFormatter()
@@ -146,14 +145,9 @@ private extension HsaAccountViewModel {
             let contributionAmount = contributionSummary?.amount ?? 0
             let contributionMaxAmount = contributionSummary?.maxAmount ?? 0
             let contributionRemainingAmount = max(contributionMaxAmount - contributionAmount, 0)
-            
             self.contributionMaxAmount = currencyFormatter.string(from: contributionMaxAmount as NSNumber) ?? ""
             self.contributionRemainingAmount = currencyFormatter.string(from: contributionRemainingAmount as NSNumber) ?? ""
             self.contributionAmount = currencyFormatter.string(from: contributionAmount as NSNumber) ?? ""
-            
-            if let year = contributionSummary?.year {
-                contributionText = "\(year) CONTRIBUTION: \(self.contributionAmount)"
-            }
         }
     }
 

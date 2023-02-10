@@ -2,10 +2,38 @@
 
 _The native iOS application of HSA built with SwiftUI._
 
+# Quick Start
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+- iOS 15.0+
+- Xcode 14.0+
+- [CocoaPods](http://cocoapods.org/)
+- [Swift Package Manager](https://www.swift.org/package-manager/)
+
+
+### How to setup project?
+
+1. Clone this repository into a location of your choice, like your projects folder
+2. Open terminal - > Navigate to  the directory containing ``Podfile``
+3. Then install pods into your project by typing in terminal: ```pod install```
+4. Once completed, there will be a message that says
+`"Pod installation complete! There are X dependencies from the Podfile and X total pods installed."`
+5. You are all set now. Open the .xcworkspace file from now on and hit Xcode's 'run' button.  🚀 
+
+### How to use?
+There are 3 schemes available to run the project in Debug, Staging, Release environment.
+1. Debug - Set the active scheme as `HSAapp - Debug` to run the project in Debug environment.
+2. Staging  - Set the active scheme as `HSAapp - Staging` to run the project in Staging environment. 
+3. Release - Set the active scheme as `HSAapp - Release` to run the project in Release environment.
+
+### Swift Style Guide
+Code follows [Swift standard library](https://google.github.io/swift/) style guide.
+Project uses [SwiftLint](https://github.com/realm/SwiftLint) to enforce Swift style and conventions before sending a pull request.
+
 ### Dependencies
-
 A few dependencies are required to begin developing the application:
-
 - [SwiftLint](https://github.com/realm/SwiftLint#installation) 
 - [Firebase/Analytics](https://github.com/firebase/firebase-ios-sdk/tree/master/FirebaseAnalyticsSwift#installation) 
 - [Firebase/Crashlytics](https://github.com/firebase/firebase-ios-sdk/tree/master/Crashlytics#installation) 

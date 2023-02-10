@@ -16,12 +16,12 @@ extension DashboardSummary {
             do {
                 let decoded = try decoder.decode([String: T].self, from: jsonData)
                 if let data = decoded["data"] {
-                    print(data)
+                    debugPrint(data)
                     return data
                 }
                 
             } catch {
-                print(error)
+                debugPrint(error)
                 assertionFailure("failed to decode json to object \(error.localizedDescription)")
                 return nil
             }
@@ -29,7 +29,7 @@ extension DashboardSummary {
         
         do {
             let decoded = try decoder.decode(T.self, from: jsonData)
-            print(decoded)
+            debugPrint(decoded)
             return decoded
         } catch {
             assertionFailure("failed to decode json to object \(error.localizedDescription)")
@@ -47,7 +47,7 @@ extension DashboardSummary {
         let trans = List<TransactionSummary>()
         trans.append(objectsIn: decoded.recentTransactions[0...Int.random(in: 1...decoded.recentTransactions.count-1)])
         decoded.recentTransactions = trans
-        print(decoded)
+        debugPrint(decoded)
         return decoded
     }
     
@@ -59,7 +59,7 @@ extension DashboardSummary {
         let decoder = JSONDecoder()
         do {
             let decoded = try decoder.decode([TransactionSummary].self, from: jsonData)
-            print(decoded)
+            debugPrint(decoded)
             return decoded
         } catch {
             fatalError(error.localizedDescription)
@@ -74,7 +74,7 @@ extension DashboardSummary {
         let decoder = JSONDecoder()
         do {
             let decoded = try decoder.decode(AccountSummary.self, from: jsonData)
-            print(decoded)
+            debugPrint(decoded)
             return decoded
         } catch {
             fatalError(error.localizedDescription)

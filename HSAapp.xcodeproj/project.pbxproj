@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,34 +31,11 @@
 		4D821F23264D7B9000D50000 /* TransactionSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D821F22264D7B9000D50000 /* TransactionSummaryViewModel.swift */; };
 		4D851A852628C950001EAB41 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D851A842628C950001EAB41 /* EnvironmentConfiguration.swift */; };
 		4D89B5252614BAC900D2FB73 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89B5242614BAC900D2FB73 /* ColorExtensions.swift */; };
-		4D89B55426151A0C00D2FB73 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54C261519ED00D2FB73 /* Poppins-Black.ttf */; };
-		4D89B55526151A0C00D2FB73 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B549261519ED00D2FB73 /* Poppins-BlackItalic.ttf */; };
 		4D89B55626151A0C00D2FB73 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B544261519ED00D2FB73 /* Poppins-Bold.ttf */; };
-		4D89B55726151A0C00D2FB73 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B541261519EC00D2FB73 /* Poppins-BoldItalic.ttf */; };
-		4D89B55826151A0C00D2FB73 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B545261519ED00D2FB73 /* Poppins-ExtraBold.ttf */; };
-		4D89B55926151A0C00D2FB73 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54A261519ED00D2FB73 /* Poppins-ExtraBoldItalic.ttf */; };
-		4D89B55A26151A0C00D2FB73 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53E261519EC00D2FB73 /* Poppins-ExtraLight.ttf */; };
-		4D89B55B26151A0C00D2FB73 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B546261519ED00D2FB73 /* Poppins-ExtraLightItalic.ttf */; };
-		4D89B55C26151A0C00D2FB73 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53F261519EC00D2FB73 /* Poppins-Italic.ttf */; };
 		4D89B55D26151A0C00D2FB73 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54B261519ED00D2FB73 /* Poppins-Light.ttf */; };
-		4D89B55E26151A0C00D2FB73 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54E261519ED00D2FB73 /* Poppins-LightItalic.ttf */; };
 		4D89B55F26151A0C00D2FB73 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54F261519ED00D2FB73 /* Poppins-Medium.ttf */; };
-		4D89B56026151A0C00D2FB73 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B540261519EC00D2FB73 /* Poppins-MediumItalic.ttf */; };
 		4D89B56126151A0C00D2FB73 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B54D261519ED00D2FB73 /* Poppins-Regular.ttf */; };
 		4D89B56226151A0C00D2FB73 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B550261519ED00D2FB73 /* Poppins-SemiBold.ttf */; };
-		4D89B56326151A0C00D2FB73 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B547261519ED00D2FB73 /* Poppins-SemiBoldItalic.ttf */; };
-		4D89B56426151A0C00D2FB73 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B542261519ED00D2FB73 /* Poppins-Thin.ttf */; };
-		4D89B56526151A0C00D2FB73 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B548261519ED00D2FB73 /* Poppins-ThinItalic.ttf */; };
-		4D89B56626151A0C00D2FB73 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B534261519E300D2FB73 /* OpenSans-Bold.ttf */; };
-		4D89B56726151A0C00D2FB73 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B538261519E400D2FB73 /* OpenSans-BoldItalic.ttf */; };
-		4D89B56826151A0C00D2FB73 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B539261519E400D2FB73 /* OpenSans-ExtraBold.ttf */; };
-		4D89B56926151A0C00D2FB73 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53A261519E400D2FB73 /* OpenSans-ExtraBoldItalic.ttf */; };
-		4D89B56A26151A0C00D2FB73 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B536261519E400D2FB73 /* OpenSans-Italic.ttf */; };
-		4D89B56B26151A0C00D2FB73 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B537261519E400D2FB73 /* OpenSans-Light.ttf */; };
-		4D89B56C26151A0C00D2FB73 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53C261519E400D2FB73 /* OpenSans-LightItalic.ttf */; };
-		4D89B56D26151A0C00D2FB73 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B53B261519E400D2FB73 /* OpenSans-Regular.ttf */; };
-		4D89B56E26151A0C00D2FB73 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B533261519E300D2FB73 /* OpenSans-SemiBold.ttf */; };
-		4D89B56F26151A0C00D2FB73 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D89B535261519E300D2FB73 /* OpenSans-SemiBoldItalic.ttf */; };
 		4D9C303325C1DEEC0080C52E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C303225C1DEEC0080C52E /* Header.swift */; };
 		4D9C304125C1E4570080C52E /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C304025C1E4570080C52E /* RepositoryService.swift */; };
 		4DA1DB4D2694B39200AB90DD /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1DB4C2694B39200AB90DD /* PullToRefresh.swift */; };
@@ -113,7 +90,6 @@
 		4F761FB526CBBD9600AE8EE1 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F761FB426CBBD9600AE8EE1 /* AccountType.swift */; };
 		4F769AF8279DE95C003B9869 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F769AF7279DE95C003B9869 /* GenericError.swift */; };
 		4F7A0439275BCF7C00BD5A4B /* RandomAccessCollection+Last.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A0438275BCF7B00BD5A4B /* RandomAccessCollection+Last.swift */; };
-		4F7AECD4275E2CE9007178E6 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 4F7AECD3275E2CE9007178E6 /* KeychainAccess */; };
 		4F7AECD6275E2CFD007178E6 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7AECD5275E2CFD007178E6 /* KeychainManager.swift */; };
 		4FA44DC426EBDE690098CCC8 /* View+WhenRedacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA44DC326EBDE690098CCC8 /* View+WhenRedacted.swift */; };
 		4FA6FCD627463188007C30ED /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6FCD527463187007C30ED /* NavigationLazyView.swift */; };
@@ -172,11 +148,12 @@
 		AA82435A2796ED4100B22659 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8243592796ED4100B22659 /* PDFView.swift */; };
 		AA84A6F02716DCB1009FD357 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84A6EF2716DCB1009FD357 /* Decoder.swift */; };
 		AAD5B1BA26C6908F00942DFD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD5B1B926C6908F00942DFD /* StringExtension.swift */; };
-		AADB3471270C263C00F052D2 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADB3470270C263C00F052D2 /* NavigationUtil.swift */; };
 		AAECE0C22860B570008150F5 /* ContributionSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECE0C12860B570008150F5 /* ContributionSummaryDataModel.swift */; };
 		AAECE0C42860B59E008150F5 /* AccountSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECE0C32860B59E008150F5 /* AccountSummaryDataModel.swift */; };
 		AAECE0C62860B5F1008150F5 /* TransactionSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECE0C52860B5F1008150F5 /* TransactionSummaryDataModel.swift */; };
 		B970F194274E67AB00A0AD8E /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970F193274E67AB00A0AD8E /* Bundle+Version.swift */; };
+		E6F9AED52995534300649013 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6F9AED42995534300649013 /* Localizable.strings */; };
+		E6F9AEDA2995577100649013 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F9AED92995577100649013 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,7 +175,6 @@
 
 /* Begin PBXFileReference section */
 		163A04B3E109179E12ED1E75 /* Pods_HSAappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSAappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2645D0B9D1B86DC36E37B16F /* Pods-HSAappTests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.beta.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.beta.xcconfig"; sourceTree = "<group>"; };
 		2BEB3233AAC6DA8068F25F54 /* Pods_HSAapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSAapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D00857F25CC63EA0006345E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		4D00858825CC6AC60006345E /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
@@ -222,38 +198,14 @@
 		4D821F20264D7B7600D50000 /* TransactionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummaryView.swift; sourceTree = "<group>"; };
 		4D821F22264D7B9000D50000 /* TransactionSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummaryViewModel.swift; sourceTree = "<group>"; };
 		4D851A572628B533001EAB41 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		4D851A582628B549001EAB41 /* Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Beta.xcconfig; sourceTree = "<group>"; };
-		4D851A592628B555001EAB41 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
+		4D851A582628B549001EAB41 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		4D851A592628B555001EAB41 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		4D851A842628C950001EAB41 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
 		4D89B5242614BAC900D2FB73 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		4D89B533261519E300D2FB73 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		4D89B534261519E300D2FB73 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		4D89B535261519E300D2FB73 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		4D89B536261519E400D2FB73 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		4D89B537261519E400D2FB73 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		4D89B538261519E400D2FB73 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		4D89B539261519E400D2FB73 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4D89B53A261519E400D2FB73 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		4D89B53B261519E400D2FB73 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		4D89B53C261519E400D2FB73 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		4D89B53D261519E400D2FB73 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		4D89B53E261519EC00D2FB73 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
-		4D89B53F261519EC00D2FB73 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
-		4D89B540261519EC00D2FB73 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
-		4D89B541261519EC00D2FB73 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
-		4D89B542261519ED00D2FB73 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
-		4D89B543261519ED00D2FB73 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		4D89B544261519ED00D2FB73 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		4D89B545261519ED00D2FB73 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4D89B546261519ED00D2FB73 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		4D89B547261519ED00D2FB73 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		4D89B548261519ED00D2FB73 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
-		4D89B549261519ED00D2FB73 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
-		4D89B54A261519ED00D2FB73 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		4D89B54B261519ED00D2FB73 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
-		4D89B54C261519ED00D2FB73 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		4D89B54D261519ED00D2FB73 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		4D89B54E261519ED00D2FB73 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		4D89B54F261519ED00D2FB73 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		4D89B550261519ED00D2FB73 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		4D9C303225C1DEEC0080C52E /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -330,7 +282,7 @@
 		4FBE54F926BECA0500FECBFE /* HsaAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsaAccountViewModel.swift; sourceTree = "<group>"; };
 		4FBE54FB26BECEE200FECBFE /* AccountNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumbersView.swift; sourceTree = "<group>"; };
 		4FBE54FD26BED4FD00FECBFE /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
-		4FBE54FF26C012A300FECBFE /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		4FBE54FF26C012A300FECBFE /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionListView.swift; path = Components/TransactionListView.swift; sourceTree = "<group>"; };
 		4FBEF2A6270072D200571B08 /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
 		4FBEF2A8270072F700571B08 /* View+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Border.swift"; sourceTree = "<group>"; };
 		4FC7319326FF152400A51595 /* View+Modal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Modal.swift"; sourceTree = "<group>"; };
@@ -357,18 +309,17 @@
 		4FF51FFF26E5079000E64D72 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		4FF602EB26B14977004D1690 /* UINavigationController+EmptyBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+EmptyBackButton.swift"; sourceTree = "<group>"; };
 		4FF8A0F12775A42500442ACC /* ScrollViewIfNeeded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewIfNeeded.swift; sourceTree = "<group>"; };
+		53CF2F2A3DC3A7E6754178F5 /* Pods-HSAapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.release.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.release.xcconfig"; sourceTree = "<group>"; };
 		55099F6F2923BADD008738C6 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		55099F712923CD6B008738C6 /* URLLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLLink.swift; sourceTree = "<group>"; };
 		55099FD72923E45B008738C6 /* HSAappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSAappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55099FD92923E45B008738C6 /* DashboardScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenTests.swift; sourceTree = "<group>"; };
 		554A4E642923F8C7001C36E0 /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Firebase; sourceTree = "<group>"; };
-		556E6F1B7D83CC53302E92C2 /* Pods-HSAapp.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.dev.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.dev.xcconfig"; sourceTree = "<group>"; };
 		557AB4C9291E9B3600CE1DD9 /* XCUITestsFAQFlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCUITestsFAQFlowTests.swift; sourceTree = "<group>"; };
 		5589FC152924A16700BA4CD8 /* XCUITestsAppFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestsAppFlowTests.swift; sourceTree = "<group>"; };
 		55B6C4C12923F0D10036E472 /* HSAAccountScreenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSAAccountScreenTests.swift; sourceTree = "<group>"; };
-		80A91C050BA73520861D73CA /* Pods-HSAapp.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.beta.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.beta.xcconfig"; sourceTree = "<group>"; };
-		8F86B181347D7A72AE471785 /* Pods-HSAappTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.dev.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.dev.xcconfig"; sourceTree = "<group>"; };
-		953BB6F9D34D428C7CF870AD /* Pods-HSAapp.beta - debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.beta - debug.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.beta - debug.xcconfig"; sourceTree = "<group>"; };
+		5D8C06DB796E02370B5FF1B5 /* Pods-HSAapp.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.staging.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.staging.xcconfig"; sourceTree = "<group>"; };
+		92ADC1C78D83BE37C109EB6C /* Pods-HSAappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.release.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.release.xcconfig"; sourceTree = "<group>"; };
 		A762E70F7C6D4C40BEB15780 /* Pods-HSAapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.debug.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0306202775E6E900A82AB8 /* UImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UImageExtension.swift; sourceTree = "<group>"; };
 		AA20CFDD274E67AF00152C62 /* SupportSourceScreenName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSourceScreenName.swift; sourceTree = "<group>"; };
@@ -377,15 +328,14 @@
 		AA8243592796ED4100B22659 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		AA84A6EF2716DCB1009FD357 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		AAD5B1B926C6908F00942DFD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		AADB3470270C263C00F052D2 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 		AAECE0C12860B570008150F5 /* ContributionSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionSummaryDataModel.swift; sourceTree = "<group>"; };
 		AAECE0C32860B59E008150F5 /* AccountSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryDataModel.swift; sourceTree = "<group>"; };
 		AAECE0C52860B5F1008150F5 /* TransactionSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSummaryDataModel.swift; sourceTree = "<group>"; };
+		B1DF3343C36D77FF545FF63C /* Pods-HSAappTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.staging.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.staging.xcconfig"; sourceTree = "<group>"; };
 		B944B9B1AF8112D8B380EDA7 /* Pods-HSAappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.debug.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B970F193274E67AB00A0AD8E /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
-		C53AA0543FD6BDD4E27E33E3 /* Pods-HSAapp.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAapp.app store.xcconfig"; path = "Target Support Files/Pods-HSAapp/Pods-HSAapp.app store.xcconfig"; sourceTree = "<group>"; };
-		D9F7AE8C4B7DC83D7CFDD9DA /* Pods-HSAappTests.beta - debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.beta - debug.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.beta - debug.xcconfig"; sourceTree = "<group>"; };
-		F5655633C2DDDAE711B71EF8 /* Pods-HSAappTests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAappTests.app store.xcconfig"; path = "Target Support Files/Pods-HSAappTests/Pods-HSAappTests.app store.xcconfig"; sourceTree = "<group>"; };
+		E6F9AED42995534300649013 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E6F9AED92995577100649013 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,7 +343,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7AECD4275E2CE9007178E6 /* KeychainAccess in Frameworks */,
 				5589FC1D2924F81800BA4CD8 /* TextView in Frameworks */,
 				1BB982A6C0A3C5CFF67C6A2A /* Pods_HSAapp.framework in Frameworks */,
 			);
@@ -453,7 +402,12 @@
 		4D48BC1326582B8B00C33A35 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				4FF830B8274CDD4600F5B3D2 /* Components */,
+				4FBE54FF26C012A300FECBFE /* TransactionListView.swift */,
+				4F70BC9126C2FA93000B81C4 /* TransactionListEmptyView.swift */,
+				4F70BC9326C2FC3A000B81C4 /* TransactionSection.swift */,
+				4F70BC9526C3B898000B81C4 /* TransactionsManaging.swift */,
+				4D821F20264D7B7600D50000 /* TransactionSummaryView.swift */,
+				4D821F22264D7B9000D50000 /* TransactionSummaryViewModel.swift */,
 				4D48BC012653F01700C33A35 /* TransactionListScreen.swift */,
 				4D48BC032653F02500C33A35 /* TransactionListViewModel.swift */,
 			);
@@ -486,8 +440,8 @@
 			children = (
 				554A4E642923F8C7001C36E0 /* Firebase */,
 				4D851A572628B533001EAB41 /* Development.xcconfig */,
-				4D851A582628B549001EAB41 /* Beta.xcconfig */,
-				4D851A592628B555001EAB41 /* AppStore.xcconfig */,
+				4D851A582628B549001EAB41 /* Staging.xcconfig */,
+				4D851A592628B555001EAB41 /* Release.xcconfig */,
 				4D851A842628C950001EAB41 /* EnvironmentConfiguration.swift */,
 			);
 			path = Configs;
@@ -542,6 +496,7 @@
 		4DAEEC5525B7568000AE7FC1 = {
 			isa = PBXGroup;
 			children = (
+				E6F9AED92995577100649013 /* R.generated.swift */,
 				4DAEEC6025B7568000AE7FC1 /* HSAapp */,
 				AA72F13828FECFB20024215E /* HSAappXCUITests */,
 				55099FD82923E45B008738C6 /* HSAappTests */,
@@ -606,15 +561,15 @@
 		4DBD5FA425BE050300424B90 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				4D02458725C89F3900A69D8E /* Router.swift */,
-				4FB95691272D16240052B598 /* HSAAppApplication.swift */,
-				4FDE240926E611850008D240 /* Constants.swift */,
-				4D9C303125C1DEDC0080C52E /* Common */,
+				AA35DA1D26CA9C2400679401 /* HelperClass */,
 				4F01EA5226A9704100E6CA19 /* Modifiers */,
 				4FF830BE274CE20000F5B3D2 /* Extensions */,
-				AA35DA1D26CA9C2400679401 /* HelperClass */,
+				4DC743002633249400E08D83 /* Debugging */,
+				4D9C303125C1DEDC0080C52E /* Common */,
 				4D12F5D325E596EF0048A2A8 /* UIKitBridges */,
 				4D02459125CB117300A69D8E /* Util */,
+				4D02458725C89F3900A69D8E /* Router.swift */,
+				4FB95691272D16240052B598 /* HSAAppApplication.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -632,36 +587,12 @@
 		4DBF6BBF25D5907A00B4E171 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4D89B543261519ED00D2FB73 /* OFL.txt */,
-				4D89B54C261519ED00D2FB73 /* Poppins-Black.ttf */,
-				4D89B549261519ED00D2FB73 /* Poppins-BlackItalic.ttf */,
 				4D89B544261519ED00D2FB73 /* Poppins-Bold.ttf */,
-				4D89B541261519EC00D2FB73 /* Poppins-BoldItalic.ttf */,
-				4D89B545261519ED00D2FB73 /* Poppins-ExtraBold.ttf */,
-				4D89B54A261519ED00D2FB73 /* Poppins-ExtraBoldItalic.ttf */,
-				4D89B53E261519EC00D2FB73 /* Poppins-ExtraLight.ttf */,
-				4D89B546261519ED00D2FB73 /* Poppins-ExtraLightItalic.ttf */,
-				4D89B53F261519EC00D2FB73 /* Poppins-Italic.ttf */,
 				4D89B54B261519ED00D2FB73 /* Poppins-Light.ttf */,
-				4D89B54E261519ED00D2FB73 /* Poppins-LightItalic.ttf */,
 				4D89B54F261519ED00D2FB73 /* Poppins-Medium.ttf */,
-				4D89B540261519EC00D2FB73 /* Poppins-MediumItalic.ttf */,
 				4D89B54D261519ED00D2FB73 /* Poppins-Regular.ttf */,
 				4D89B550261519ED00D2FB73 /* Poppins-SemiBold.ttf */,
-				4D89B547261519ED00D2FB73 /* Poppins-SemiBoldItalic.ttf */,
-				4D89B542261519ED00D2FB73 /* Poppins-Thin.ttf */,
-				4D89B548261519ED00D2FB73 /* Poppins-ThinItalic.ttf */,
 				4D89B53D261519E400D2FB73 /* LICENSE.txt */,
-				4D89B534261519E300D2FB73 /* OpenSans-Bold.ttf */,
-				4D89B538261519E400D2FB73 /* OpenSans-BoldItalic.ttf */,
-				4D89B539261519E400D2FB73 /* OpenSans-ExtraBold.ttf */,
-				4D89B53A261519E400D2FB73 /* OpenSans-ExtraBoldItalic.ttf */,
-				4D89B536261519E400D2FB73 /* OpenSans-Italic.ttf */,
-				4D89B537261519E400D2FB73 /* OpenSans-Light.ttf */,
-				4D89B53C261519E400D2FB73 /* OpenSans-LightItalic.ttf */,
-				4D89B53B261519E400D2FB73 /* OpenSans-Regular.ttf */,
-				4D89B533261519E300D2FB73 /* OpenSans-SemiBold.ttf */,
-				4D89B535261519E300D2FB73 /* OpenSans-SemiBoldItalic.ttf */,
 				4DBED41C25D5A2F3001E882C /* dotsfont.ttf */,
 			);
 			path = Fonts;
@@ -718,17 +649,6 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
-		4F70BC9026C2FA5B000B81C4 /* TransactionList */ = {
-			isa = PBXGroup;
-			children = (
-				4FBE54FF26C012A300FECBFE /* TransactionListView.swift */,
-				4F70BC9126C2FA93000B81C4 /* TransactionListEmptyView.swift */,
-				4F70BC9326C2FC3A000B81C4 /* TransactionSection.swift */,
-				4F70BC9526C3B898000B81C4 /* TransactionsManaging.swift */,
-			);
-			path = TransactionList;
-			sourceTree = "<group>";
-		};
 		4F70BC9726C3C411000B81C4 /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -755,15 +675,6 @@
 				4F761FB426CBBD9600AE8EE1 /* AccountType.swift */,
 			);
 			path = Account;
-			sourceTree = "<group>";
-		};
-		4FB215B226F497F100A8B7B5 /* Contact */ = {
-			isa = PBXGroup;
-			children = (
-				4FB215B326F497FD00A8B7B5 /* ContactUsView.swift */,
-				4FB93C592701A75200FDCA21 /* ContactUsViewModel.swift */,
-			);
-			path = Contact;
 			sourceTree = "<group>";
 		};
 		4FBA7C1D26ADB19B00C98DF8 /* Buttons */ = {
@@ -843,16 +754,6 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		4FF830B8274CDD4600F5B3D2 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				4F70BC9026C2FA5B000B81C4 /* TransactionList */,
-				4D821F20264D7B7600D50000 /* TransactionSummaryView.swift */,
-				4D821F22264D7B9000D50000 /* TransactionSummaryViewModel.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		4FF830BD274CE1C300F5B3D2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,7 +794,8 @@
 			children = (
 				4DA2CD01267D104B0046E7A3 /* MenuView.swift */,
 				4DA2CD03267D105A0046E7A3 /* MenuViewModel.swift */,
-				4FB215B226F497F100A8B7B5 /* Contact */,
+				4FB215B326F497FD00A8B7B5 /* ContactUsView.swift */,
+				4FB93C592701A75200FDCA21 /* ContactUsViewModel.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -952,9 +854,9 @@
 		AA35DA1D26CA9C2400679401 /* HelperClass */ = {
 			isa = PBXGroup;
 			children = (
-				4DC743002633249400E08D83 /* Debugging */,
-				AADB3470270C263C00F052D2 /* NavigationUtil.swift */,
 				AA84A6EF2716DCB1009FD357 /* Decoder.swift */,
+				4FDE240926E611850008D240 /* Constants.swift */,
+				E6F9AED42995534300649013 /* Localizable.strings */,
 			);
 			path = HelperClass;
 			sourceTree = "<group>";
@@ -983,15 +885,11 @@
 			isa = PBXGroup;
 			children = (
 				A762E70F7C6D4C40BEB15780 /* Pods-HSAapp.debug.xcconfig */,
-				C53AA0543FD6BDD4E27E33E3 /* Pods-HSAapp.app store.xcconfig */,
-				80A91C050BA73520861D73CA /* Pods-HSAapp.beta.xcconfig */,
-				953BB6F9D34D428C7CF870AD /* Pods-HSAapp.beta - debug.xcconfig */,
-				556E6F1B7D83CC53302E92C2 /* Pods-HSAapp.dev.xcconfig */,
 				B944B9B1AF8112D8B380EDA7 /* Pods-HSAappTests.debug.xcconfig */,
-				F5655633C2DDDAE711B71EF8 /* Pods-HSAappTests.app store.xcconfig */,
-				2645D0B9D1B86DC36E37B16F /* Pods-HSAappTests.beta.xcconfig */,
-				D9F7AE8C4B7DC83D7CFDD9DA /* Pods-HSAappTests.beta - debug.xcconfig */,
-				8F86B181347D7A72AE471785 /* Pods-HSAappTests.dev.xcconfig */,
+				53CF2F2A3DC3A7E6754178F5 /* Pods-HSAapp.release.xcconfig */,
+				5D8C06DB796E02370B5FF1B5 /* Pods-HSAapp.staging.xcconfig */,
+				92ADC1C78D83BE37C109EB6C /* Pods-HSAappTests.release.xcconfig */,
+				B1DF3343C36D77FF545FF63C /* Pods-HSAappTests.staging.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1004,6 +902,7 @@
 			buildConfigurationList = 4DAEEC8325B7568000AE7FC1 /* Build configuration list for PBXNativeTarget "HSAapp" */;
 			buildPhases = (
 				618DEBD962B73D088B5070E3 /* [CP] Check Pods Manifest.lock */,
+				E6F9AED62995541900649013 /* ShellScript */,
 				4F6DECBC26A175CB00EC35E0 /* Setup Firebase Environment */,
 				4F01EA2C26A420B100E6CA19 /* Run SwiftLint */,
 				4DAEEC5A25B7568000AE7FC1 /* Sources */,
@@ -1018,7 +917,6 @@
 			);
 			name = HSAapp;
 			packageProductDependencies = (
-				4F7AECD3275E2CE9007178E6 /* KeychainAccess */,
 				5589FC1C2924F81800BA4CD8 /* TextView */,
 			);
 			productName = Zenda;
@@ -1072,7 +970,7 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					4DAEEC5D25B7568000AE7FC1 = {
 						CreatedOnToolsVersion = 12.3;
@@ -1099,7 +997,6 @@
 			mainGroup = 4DAEEC5525B7568000AE7FC1;
 			packageReferences = (
 				4FB93C5B2701AF0400FDCA21 /* XCRemoteSwiftPackageReference "TextView" */,
-				4F7AECD2275E2CE9007178E6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 4DAEEC5F25B7568000AE7FC1 /* Products */;
 			projectDirPath = "";
@@ -1117,35 +1014,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D89B55426151A0C00D2FB73 /* Poppins-Black.ttf in Resources */,
-				4D89B55526151A0C00D2FB73 /* Poppins-BlackItalic.ttf in Resources */,
 				4D89B55626151A0C00D2FB73 /* Poppins-Bold.ttf in Resources */,
-				4D89B55726151A0C00D2FB73 /* Poppins-BoldItalic.ttf in Resources */,
-				4D89B55826151A0C00D2FB73 /* Poppins-ExtraBold.ttf in Resources */,
-				4D89B55926151A0C00D2FB73 /* Poppins-ExtraBoldItalic.ttf in Resources */,
-				4D89B55A26151A0C00D2FB73 /* Poppins-ExtraLight.ttf in Resources */,
-				4D89B55B26151A0C00D2FB73 /* Poppins-ExtraLightItalic.ttf in Resources */,
-				4D89B55C26151A0C00D2FB73 /* Poppins-Italic.ttf in Resources */,
+				E6F9AED52995534300649013 /* Localizable.strings in Resources */,
 				554A4E652923F8C7001C36E0 /* Firebase in Resources */,
 				4D89B55D26151A0C00D2FB73 /* Poppins-Light.ttf in Resources */,
-				4D89B55E26151A0C00D2FB73 /* Poppins-LightItalic.ttf in Resources */,
 				4D89B55F26151A0C00D2FB73 /* Poppins-Medium.ttf in Resources */,
-				4D89B56026151A0C00D2FB73 /* Poppins-MediumItalic.ttf in Resources */,
 				4D89B56126151A0C00D2FB73 /* Poppins-Regular.ttf in Resources */,
 				4D89B56226151A0C00D2FB73 /* Poppins-SemiBold.ttf in Resources */,
-				4D89B56326151A0C00D2FB73 /* Poppins-SemiBoldItalic.ttf in Resources */,
-				4D89B56426151A0C00D2FB73 /* Poppins-Thin.ttf in Resources */,
-				4D89B56526151A0C00D2FB73 /* Poppins-ThinItalic.ttf in Resources */,
-				4D89B56626151A0C00D2FB73 /* OpenSans-Bold.ttf in Resources */,
-				4D89B56726151A0C00D2FB73 /* OpenSans-BoldItalic.ttf in Resources */,
-				4D89B56826151A0C00D2FB73 /* OpenSans-ExtraBold.ttf in Resources */,
-				4D89B56926151A0C00D2FB73 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				4D89B56A26151A0C00D2FB73 /* OpenSans-Italic.ttf in Resources */,
-				4D89B56B26151A0C00D2FB73 /* OpenSans-Light.ttf in Resources */,
-				4D89B56C26151A0C00D2FB73 /* OpenSans-LightItalic.ttf in Resources */,
-				4D89B56D26151A0C00D2FB73 /* OpenSans-Regular.ttf in Resources */,
-				4D89B56E26151A0C00D2FB73 /* OpenSans-SemiBold.ttf in Resources */,
-				4D89B56F26151A0C00D2FB73 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				4D5BB8BB25DC5DED00541813 /* Colors.xcassets in Resources */,
 				4DAEEC9325B75BDA00AE7FC1 /* LaunchScreen.storyboard in Resources */,
 				4DBED41D25D5A2F3001E882C /* dotsfont.ttf in Resources */,
@@ -1195,6 +1070,7 @@
 		};
 		4F01EA2C26A420B100E6CA19 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1213,6 +1089,7 @@
 		};
 		4F6DECB426A0817600EC35E0 /* Setup Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1233,6 +1110,7 @@
 		};
 		4F6DECBC26A175CB00EC35E0 /* Setup Firebase Environment */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1287,6 +1165,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HSAapp/Pods-HSAapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E6F9AED62995541900649013 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1386,7 +1283,6 @@
 				4D12F5CF25E5905A0048A2A8 /* KeychainService.swift in Sources */,
 				4D89B5252614BAC900D2FB73 /* ColorExtensions.swift in Sources */,
 				4FA6FCD627463188007C30ED /* NavigationLazyView.swift in Sources */,
-				AADB3471270C263C00F052D2 /* NavigationUtil.swift in Sources */,
 				4F5B33FA27F0443400C68FA9 /* NetworkStatusService.swift in Sources */,
 				4DC3ED6126495D5B0041C024 /* Sync.swift in Sources */,
 				4D12F5D525E597090048A2A8 /* ActivityIndicator.swift in Sources */,
@@ -1412,6 +1308,7 @@
 				4D851A852628C950001EAB41 /* EnvironmentConfiguration.swift in Sources */,
 				4F01EA3D26A950B900E6CA19 /* AnalyticsType.swift in Sources */,
 				4D02458825C89F3900A69D8E /* Router.swift in Sources */,
+				E6F9AEDA2995577100649013 /* R.generated.swift in Sources */,
 				4D821F1F264D77A600D50000 /* TransactionSummary.swift in Sources */,
 				4D02455425C3340000A69D8E /* PersistenceService.swift in Sources */,
 				4F70BC9426C2FC3A000B81C4 /* TransactionSection.swift in Sources */,
@@ -1460,9 +1357,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4D4FFD82260247FD00F84B73 /* Beta */ = {
+		4D4FFD82260247FD00F84B73 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D851A582628B549001EAB41 /* Beta.xcconfig */;
+			baseConfigurationReference = 4D851A582628B549001EAB41 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_BUNDLE_ID = com.hsaapp.beta;
@@ -1520,199 +1417,37 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Beta;
+			name = Staging;
 		};
-		4D4FFD83260247FD00F84B73 /* Beta */ = {
+		4D4FFD83260247FD00F84B73 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80A91C050BA73520861D73CA /* Pods-HSAapp.beta.xcconfig */;
+			baseConfigurationReference = 5D8C06DB796E02370B5FF1B5 /* Pods-HSAapp.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HSAapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.1;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"FBLPromises\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseInstallations\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleDataTransport\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"nanopb\"",
-					"-ObjC",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.beta;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Beta;
-		};
-		4D4FFD8C26024E8D00F84B73 /* Dev */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D851A572628B533001EAB41 /* Development.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BUNDLE_ID = com.hsaapp.dev;
-				APP_DISPLAY_NAME = "";
-				"APP_DISPLAY_NAME[arch=*]" = "HSAapp Dev";
-				APP_NAME = "HSAapp (Dev)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.dev;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Dev;
-		};
-		4D4FFD8D26024E8D00F84B73 /* Dev */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 556E6F1B7D83CC53302E92C2 /* Pods-HSAapp.dev.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HSAapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.2.1;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"FBLPromises\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseInstallations\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleDataTransport\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"nanopb\"",
-					"-ObjC",
-				);
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Dev;
+			name = Staging;
 		};
 		4DAEEC8125B7568000AE7FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1781,9 +1516,9 @@
 			};
 			name = Debug;
 		};
-		4DAEEC8225B7568000AE7FC1 /* App Store */ = {
+		4DAEEC8225B7568000AE7FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D851A592628B555001EAB41 /* AppStore.xcconfig */;
+			baseConfigurationReference = 4D851A592628B555001EAB41 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_BUNDLE_ID = com.hsaapp.appstore;
@@ -1840,7 +1575,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "App Store";
+			name = Release;
 		};
 		4DAEEC8425B7568000AE7FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1848,57 +1583,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
-				DEVELOPMENT_TEAM = YXP66Q7F74;
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HSAapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.1;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"FBLPromises\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseInstallations\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleDataTransport\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"nanopb\"",
-					"-ObjC",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1907,202 +1606,35 @@
 			};
 			name = Debug;
 		};
-		4DAEEC8525B7568000AE7FC1 /* App Store */ = {
+		4DAEEC8525B7568000AE7FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53AA0543FD6BDD4E27E33E3 /* Pods-HSAapp.app store.xcconfig */;
+			baseConfigurationReference = 53CF2F2A3DC3A7E6754178F5 /* Pods-HSAapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
-				DEVELOPMENT_TEAM = YXP66Q7F74;
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HSAapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.1;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"FBLPromises\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseInstallations\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleDataTransport\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"nanopb\"",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appstore;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.appstore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.appstore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = "App Store";
-		};
-		4F67AF68269EBD9600422416 /* Beta - Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D851A582628B549001EAB41 /* Beta.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BUNDLE_ID = com.hsaapp.beta;
-				APP_DISPLAY_NAME = "";
-				"APP_DISPLAY_NAME[arch=*]" = "HSAapp Demo";
-				APP_NAME = "HSAapp (Beta)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.beta;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALIDATE_PRODUCT = NO;
-			};
-			name = "Beta - Debug";
-		};
-		4F67AF69269EBD9600422416 /* Beta - Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 953BB6F9D34D428C7CF870AD /* Pods-HSAapp.beta - debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = HSAapp/HSAapp.entitlements;
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"HSAapp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HSAapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.2.1;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"FBLPromises\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseInstallations\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleDataTransport\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"nanopb\"",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.beta;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.beta;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = "Beta - Debug";
+			name = Release;
 		};
 		55099FDE2923E45B008738C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2110,9 +1642,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Manual;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -2120,7 +1654,6 @@
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2128,9 +1661,9 @@
 			};
 			name = Debug;
 		};
-		55099FDF2923E45B008738C6 /* App Store */ = {
+		55099FDF2923E45B008738C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5655633C2DDDAE711B71EF8 /* Pods-HSAappTests.app store.xcconfig */;
+			baseConfigurationReference = 92ADC1C78D83BE37C109EB6C /* Pods-HSAappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2155,18 +1688,19 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2185,7 +1719,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -2195,11 +1728,11 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "App Store";
+			name = Release;
 		};
-		55099FE02923E45B008738C6 /* Beta */ = {
+		55099FE02923E45B008738C6 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2645D0B9D1B86DC36E37B16F /* Pods-HSAappTests.beta.xcconfig */;
+			baseConfigurationReference = B1DF3343C36D77FF545FF63C /* Pods-HSAappTests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2224,18 +1757,19 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2255,7 +1789,6 @@
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -2265,156 +1798,17 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Beta;
-		};
-		55099FE12923E45B008738C6 /* Beta - Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9F7AE8C4B7DC83D7CFDD9DA /* Pods-HSAappTests.beta - debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Beta - Debug";
-		};
-		55099FE22923E45B008738C6 /* Dev */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F86B181347D7A72AE471785 /* Pods-HSAappTests.dev.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappTests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.hsaapp.debug.HSAappTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSAapp.app/HSAapp";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Dev;
+			name = Staging;
 		};
 		AA72F14028FECFB20024215E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2426,7 +1820,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2436,7 +1829,7 @@
 			};
 			name = Debug;
 		};
-		AA72F14128FECFB20024215E /* App Store */ = {
+		AA72F14128FECFB20024215E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2469,11 +1862,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2497,7 +1891,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -2508,9 +1901,9 @@
 				TEST_TARGET_NAME = HSAapp;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "App Store";
+			name = Release;
 		};
-		AA72F14228FECFB20024215E /* Beta */ = {
+		AA72F14228FECFB20024215E /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2543,11 +1936,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2571,7 +1965,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -2582,155 +1975,7 @@
 				TEST_TARGET_NAME = HSAapp;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Beta;
-		};
-		AA72F14328FECFB20024215E /* Beta - Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HSAapp;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Beta - Debug";
-		};
-		AA72F14428FECFB20024215E /* Dev */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Manual;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaapp.debug.HSAappXCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HSAapp;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Dev;
+			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2739,61 +1984,45 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DAEEC8125B7568000AE7FC1 /* Debug */,
-				4DAEEC8225B7568000AE7FC1 /* App Store */,
-				4D4FFD82260247FD00F84B73 /* Beta */,
-				4F67AF68269EBD9600422416 /* Beta - Debug */,
-				4D4FFD8C26024E8D00F84B73 /* Dev */,
+				4DAEEC8225B7568000AE7FC1 /* Release */,
+				4D4FFD82260247FD00F84B73 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "App Store";
+			defaultConfigurationName = Release;
 		};
 		4DAEEC8325B7568000AE7FC1 /* Build configuration list for PBXNativeTarget "HSAapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DAEEC8425B7568000AE7FC1 /* Debug */,
-				4DAEEC8525B7568000AE7FC1 /* App Store */,
-				4D4FFD83260247FD00F84B73 /* Beta */,
-				4F67AF69269EBD9600422416 /* Beta - Debug */,
-				4D4FFD8D26024E8D00F84B73 /* Dev */,
+				4DAEEC8525B7568000AE7FC1 /* Release */,
+				4D4FFD83260247FD00F84B73 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "App Store";
+			defaultConfigurationName = Release;
 		};
 		55099FDD2923E45B008738C6 /* Build configuration list for PBXNativeTarget "HSAappTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55099FDE2923E45B008738C6 /* Debug */,
-				55099FDF2923E45B008738C6 /* App Store */,
-				55099FE02923E45B008738C6 /* Beta */,
-				55099FE12923E45B008738C6 /* Beta - Debug */,
-				55099FE22923E45B008738C6 /* Dev */,
+				55099FDF2923E45B008738C6 /* Release */,
+				55099FE02923E45B008738C6 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "App Store";
+			defaultConfigurationName = Release;
 		};
 		AA72F13F28FECFB20024215E /* Build configuration list for PBXNativeTarget "HSAappXCUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA72F14028FECFB20024215E /* Debug */,
-				AA72F14128FECFB20024215E /* App Store */,
-				AA72F14228FECFB20024215E /* Beta */,
-				AA72F14328FECFB20024215E /* Beta - Debug */,
-				AA72F14428FECFB20024215E /* Dev */,
+				AA72F14128FECFB20024215E /* Release */,
+				AA72F14228FECFB20024215E /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "App Store";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4F7AECD2275E2CE9007178E6 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
 		4FB93C5B2701AF0400FDCA21 /* XCRemoteSwiftPackageReference "TextView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kenmueller/TextView";
@@ -2805,11 +2034,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4F7AECD3275E2CE9007178E6 /* KeychainAccess */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4F7AECD2275E2CE9007178E6 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
-		};
 		5589FC1C2924F81800BA4CD8 /* TextView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4FB93C5B2701AF0400FDCA21 /* XCRemoteSwiftPackageReference "TextView" */;

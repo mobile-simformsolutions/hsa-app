@@ -14,14 +14,13 @@ struct TransactionListScreen: View {
             viewModel.refresh(showLoading: false, done)
         } content: {
             VStack {
-                
                 VStack(alignment: .leading, spacing: 0) {
-                    Text(viewModel.title)
+                    Text(appString.transactionHistory())
                         .styled(.customFull(.poppins, .medium, 26, .leading, Color.primaryText))
                         .padding(.top)
                     Spacer.small()
-                    Text(viewModel.subtitle)
-                        .styled(.customFull(.openSans, .regular, 13, .leading, Color.secondaryText))
+                    Text(appString.theTransactionHistoryPage())
+                        .styled(.customFull(.poppins, .regular, 13, .leading, Color.secondaryText))
                 }
                 .padding(.horizontal)
                 .padding(.bottom, 4)
@@ -42,7 +41,7 @@ struct TransactionListScreen: View {
             listState: $viewModel.listState,
             wrapInScrollView: false,
             emptyViewImage: nil,
-            emptyViewTitle: "Check back soon",
+            emptyViewTitle: appString.checkBackSoon(),
             emptyViewSubTitle: "",
             onLoadMore: {
                 viewModel.loadMore()

@@ -19,7 +19,7 @@ struct HsaAccountView: View {
                 VStack {
                     AccountHeaderView(
                         displayBalance: viewModel.displayBalance,
-                        balanceLabel: viewModel.balanceLabel,
+                        balanceLabel: appString.hsaBalance(),
                         balanceUpdateDisplay: viewModel.balanceUpdateDate
                     ).padding(.top, 24)
 
@@ -31,8 +31,8 @@ struct HsaAccountView: View {
 
                     ProgressBarView(progress: viewModel.contributionProgress, foregroundColor: .transactionPositive, backgroundColor: .white)
                         .frame(height: 30)
-
-                    Text("\(viewModel.contributionRemainingAmount) remaining of \(viewModel.contributionMaxAmount) limit")
+                    
+                    Text(appString.remainingLimit(viewModel.contributionRemainingAmount, viewModel.contributionMaxAmount))
                         .font(Font.custom(.poppins, weight: .medium, size: 18)).lineLimit(1).minimumScaleFactor(0.5)
 
                     Divider()
@@ -41,7 +41,7 @@ struct HsaAccountView: View {
                     HStack {
                         Image("contribution")
                         
-                        Text("Edit Contributions".uppercased())
+                        Text(appString.editContribution())
                             .font(Font.custom(.poppins, weight: .medium, size: 18))
                         
                         Image(systemName: "chevron.forward")
@@ -62,8 +62,8 @@ struct HsaAccountView: View {
                     listState: $viewModel.listState,
                     wrapInScrollView: false,
                     emptyViewImage: Image("emptyHSAActivity"),
-                    emptyViewTitle: "Contribute now!",
-                    emptyViewSubTitle: "Your account is all set up and ready for you to make a contribution.",
+                    emptyViewTitle: appString.contributeNow(),
+                    emptyViewSubTitle: appString.yourAccountIsSet(),
                     onLoadMore: {
                         viewModel.loadMore(completion: nil)
                     }

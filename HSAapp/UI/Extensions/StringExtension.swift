@@ -19,7 +19,7 @@ extension String {
                 }
             }
         } catch {
-            print("Error")
+            debugPrint("Error")
         }
         return nil
     }

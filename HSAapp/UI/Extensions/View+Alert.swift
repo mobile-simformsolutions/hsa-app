@@ -11,16 +11,11 @@ extension View {
     ///
     func hsaAlert(item: Binding<AlertConfiguration?>)
     -> some View {
-        let serverErrorMsg = "We are experiencing technical problems. Please close the app and try again later."
-        let noNetworkErrorMsg = "Something went wrong. Make sure you have connectivity and try again…."
-        let genericErrorMsg = "Something went wrong. Please try again…."
 
         let alertConfig = item.wrappedValue
-
         var showErrorSheet = false
         var showErrorAlert = false
-
-        var subtitle = noNetworkErrorMsg
+        var subtitle = appString.noNetworkErrorMsg()
         var shouldShowButton = true
 
         if let alertConfig = item.wrappedValue {
@@ -31,10 +26,10 @@ extension View {
                 case .serverError:
                     showErrorSheet = true
                     shouldShowButton = false
-                    subtitle = serverErrorMsg
+                    subtitle = appString.serverErrorMsg()
                 case .requestTimeout:
                     showErrorSheet = true
-                    subtitle = genericErrorMsg
+                    subtitle = appString.genericErrorMsg()
                 default:
                     showErrorAlert = true
                 }
@@ -54,7 +49,7 @@ extension View {
             }
         )
 
-        let buttonTitle = alertConfig?.retryAction != nil ? "Try again" : "Close"
+        let buttonTitle = alertConfig?.retryAction != nil ? appString.tryAgainMessage() : appString.close()
 
         return self
             .background(EmptyView()
@@ -65,7 +60,7 @@ extension View {
                         NavigationView {
                             AlertView(
                                 image: Image("oops"),
-                                title: "OOPS!",
+                                title: appString.oppsMessage(),
                                 subtitle: subtitle,
                                 buttonTitle: shouldShowButton ? buttonTitle : nil,
                                 onButtonTap: {

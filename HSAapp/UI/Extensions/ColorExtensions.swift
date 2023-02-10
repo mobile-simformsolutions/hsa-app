@@ -10,48 +10,31 @@ extension Color {
     static let onboardingPrimaryText = Color("OnboardingPrimaryText")
     static let onboardingSecondaryText = Color("OnboardingSecondaryText")
     static let onboardingBoxBackground = Color("OnboardingBoxBackground")
-    
-    static let onboardingRadioCenter = Color("OnboardingRadioCenter")
     static let onboardingBorder = Color("OnboardingBorder")
     static let onboardingTextFieldText = Color("OnboardingTextFieldText")
     static let onboardingLinkColor = Color("OnboardingLinkColor")
     static let errorText = Color("Error")
-    
     static let darkBackground = Color("DarkBackground")
     static let lightBackground = Color("LightBackground")
     static let primaryText = Color("OnboardingPrimaryText")
     static let secondaryText = Color("secondaryText")
     static let defaultText = Color("DefaultText")
-    static let defaultLinkColor = Color("DefaultLinkColor")
     static let okText = Color("ok")
-
     static let defaultControlBackground = Color("DefaultControlBackground")
     static let defaultBackground = Color("DefaultBackground")
     static let whiteBackground = Color("WhiteBackground")
-    
     static let navigationBackground = Color("navigationBackground")
     static let navigationSelected = Color("navigationSelected")
     static let navigationNotSelected = Color("navigationNotSelected")
-    
     static let transactionNegative = Color("transactionNegative")
     static let transactionDefault = Color("transactionDefault")
     static let transactionPositive = Color("transactionPositive")
-    static let transactionChevron = Color("TransactionChevron")
-    static let transactionSectionText = Color("TransactionSectionText")
     static let actionNeededState = Color("ActionNeeded")
     static let errorState = Color("Error")
     static let activeState = Color("Pending")
-    static let expenseBackground = Color("expenseBackground")
-    static let checkboxChecked = Color("CheckboxChecked")
     static let modalAcceptColor = Color("ModalAcceptButton")
-    static let userNameBackground = Color("UserNameBackground")
-
-    static let onboardingNewBackground = Color("OnboardingNewBackground")
-    static let onboardingNewSecondaryText = Color("OnboardingNewSecondaryText")
-    static let colorBlackText = Color("ColorBlackText")
     static let cardShadow = Color("cardShadow")
     static let dividerBackground = Color("DividerBackground")
-    
     static let myCardSecondaryText = Color("MyCardSecondaryText")
     
     func uiColor() -> UIColor {

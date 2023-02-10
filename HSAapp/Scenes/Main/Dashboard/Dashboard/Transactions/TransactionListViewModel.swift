@@ -15,8 +15,6 @@ class TransactionListViewModel: ObservableObject {
     //
     let limit = 10
     let sectionTitleFormatter: DateFormatter
-    let title = "Transaction History"
-    let subtitle = "The Transaction History page lets you view information about deposits, payments, and all transfers into and from your accounts."
 
     @Injected private var repositoryService: RepositoryService
 

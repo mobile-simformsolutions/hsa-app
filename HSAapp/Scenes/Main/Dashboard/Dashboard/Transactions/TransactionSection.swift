@@ -6,7 +6,6 @@ import Foundation
 
 class TransactionSection: Identifiable {
     
-
     let sectionDate: Date
     var sectionName: String {
         DateFormatter.transactionSectionTitleFormatter.string(from: sectionDate)

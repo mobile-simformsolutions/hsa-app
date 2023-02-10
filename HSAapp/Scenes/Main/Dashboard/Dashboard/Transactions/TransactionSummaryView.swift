@@ -42,7 +42,7 @@ struct TransactionSummaryView: View {
                     }
                     Text(viewModel.subtitle)
                         .foregroundColor(viewModel.subTitleColor)
-                        .styled(.custom(.openSans, .regular, 15))
+                        .styled(.custom(.poppins, .regular, 15))
 
                 }
                 Spacer()
@@ -58,7 +58,7 @@ struct TransactionSummaryView: View {
 
                     Text(viewModel.displayDate)
                         .foregroundColor(viewModel.iconColor)
-                        .styled(.custom(.openSans, .regular, 15))
+                        .styled(.custom(.poppins, .regular, 15))
                         .multilineTextAlignment(.trailing)
                     Spacer()
                 }

@@ -13,9 +13,9 @@ enum MenuRowType: String, CaseIterable, RawRepresentable, Identifiable {
     func title() -> String {
         switch self {
         case .faq:
-            return "FAQ"
+            return appString.faqText()
         case .contactus:
-            return "Contact us"
+            return appString.contactUs()
         }
     }
     
@@ -45,7 +45,8 @@ class MenuViewModel: ObservableObject {
     func selected(_ row: MenuRowType) {
         switch row {
         case .faq:
-            currentLink = URLLink(title: "FAQ", url: Constants.faqURL)
+            guard let url = Constants.faqURL else { return }
+            currentLink = URLLink(title: appString.faqText(), url: url)
         default:
             withAnimation {
                 self.showMenu = false

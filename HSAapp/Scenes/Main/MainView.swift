@@ -84,7 +84,6 @@ struct MainNavigation: View {
                 appearance.backgroundColor = Color.navigationBackground.uiColor()
                 appearance.stackedLayoutAppearance.selected.badgeBackgroundColor = Color.errorText.uiColor()
                 appearance.stackedLayoutAppearance.normal.badgeBackgroundColor = Color.errorText.uiColor()
-                
                 controller.tabBar.backgroundColor = Color.navigationBackground.uiColor()
                 controller.tabBar.unselectedItemTintColor = Color.navigationNotSelected.uiColor()
                 controller.tabBar.tintColor = Color.navigationSelected.uiColor()
@@ -114,7 +113,7 @@ struct MainNavigation: View {
                 .disabled($viewModel.showMenu.wrappedValue ? true : false)
                 .tabItem {
                     tabIcon(imageName: "dashboard", active: selectedTabView == MainViewTab.dashboard)
-                    Text("Dashboard")
+                    Text(appString.dashBoard())
                 }
                 .tag(MainViewTab.dashboard)
             
@@ -122,7 +121,7 @@ struct MainNavigation: View {
                 .disabled($viewModel.showMenu.wrappedValue ? true : false)
                 .tabItem {
                     tabIcon(imageName: "hsaAccount", active: selectedTabView == MainViewTab.hsaAccount)
-                    Text("HSA")
+                    Text(appString.hsaText())
                 }
                 .tag(MainViewTab.hsaAccount)
         }
