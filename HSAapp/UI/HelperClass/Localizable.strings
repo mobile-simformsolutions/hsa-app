@@ -1,0 +1,81 @@
+/* 
+  Localizable.strings
+  HSAapp
+
+  Created by Purvesh Dodiya on 09/02/23.
+  
+*/
+
+"dashBoard" = "Dashboard";
+"hsaText" = "HSA";
+"close" = "Close";
+"faqText" = "FAQ";
+"contactUs" = "Contact us";
+"descriptionOfProblem" = "Description of problem goes here…";
+"successText" = "SUCCESS!";
+"yourMessage" = "Your message has been sent! We will get back to you ASAP!";
+"weWillContact" = "We will contact you via email within 48 hours.";
+"continue"= "CONTINUE";
+"contactusText" = "Contact us!";
+"greatExperince" = "We’re here to help make sure you have a great experience with HSA!";
+"sendMessage" = "Send Message";
+"contributeNow" = "Contribute now!";
+"yourAccountIsSet" = "Your account is all set up and ready for you to make a contribution.";
+"recentActivity" = "Recent Activity";
+"seeAll" = "See all";
+"recentTransaction" = "Recent Transactions";
+"whenYouMakeAPurchase" = "When you make a purchase or a deposit it will appear below.";
+"combindBalance" = "Combined Balance";
+"availableToSpend" = "Available to spend: ";
+"hsaSpending" = "HSA spending";
+"fundYourHSA" = "Fund your HSA";
+"everydaySpending" = "Everyday spending";
+"noTransactionYet" = "No transactions yet";
+"loading" = "Loading...";
+"loadMore" = "Load More";
+"failedToLoad" = "Failed to load data: %@";
+"checkBackSoon" = "Check back soon";
+"youEmployerHasSetUp" = "Your employer has set up your account but they \n have not yet made a contribution to your HSA";
+"transactionHistory" = "Transaction History";
+"theTransactionHistoryPage" = "The Transaction History page lets you view information about deposits, payments, and all transfers into and from your accounts.";
+
+// Extension strings
+"issueLoadingData" = "Issue loading data";
+"thereWasAProblemText" = "There was a problem loading your data";
+"tryAgainMessage" = "Try Again";
+"serverErrorMsg" = "We are experiencing technical problems. Please close the app and try again later.";
+"noNetworkErrorMsg" = "Something went wrong. Make sure you have connectivity and try again….";
+"genericErrorMsg" = "Something went wrong. Please try again….";
+"oppsMessage" = "OOPS!";
+"logsMessage" = "Logs";
+"noLogsFoundMessage" = "No logs found";
+"dismissMessage" = "Dimiss";
+"sendText" = "Send";
+"configureEmail" = "Configure email";
+
+// HSA Account
+"checkFields" = "Check fields";
+"checkMessage" = "Check %@";
+"processingMessage" = "processing";
+"getHealthyMeessage" = "Get Healthy, Wealthy, & Wize";
+"doneMessage" = "Done";
+"errorMessage" = "Error";
+
+// Validation
+"eightChar" = "8 characters required";
+"capitalLetter" = "Capital letter required";
+"lowercaseRequierd" = "Lower case letter required";
+"numberRequierd" = "Number required";
+"specialCharRequired" = "Special character required";
+
+// Transaction
+"depositText" = "deposit";
+"contribution" = "contribution";
+"reimbursement" = "reimbursement";
+"routingText" = "Routing: %@";
+"accountText" = "Account: %@";
+"remainingLimit" = "%@ remaining of %@ limit";
+"editContribution" = "Edit Contributions";
+"hsaBalance" = "HSA Balance";
+"currentBalance" = "Current balance";
+"setYourContrinution" = "Set your contribution";

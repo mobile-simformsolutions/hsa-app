@@ -10,7 +10,6 @@ class TransactionSummaryViewModel: ObservableObject, Identifiable {
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d"
-
         return formatter
     }()
 

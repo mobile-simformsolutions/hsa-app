@@ -26,28 +26,24 @@ struct LogView: View {
                 Spacer.medium()
                 HStack {
                     Spacer.small()
-                    //                ActionButton(text: "copy") {
-                    //
-                    //                }
-                    //                Spacer.medium()
                     ActionButton(text: viewModel.sendEmailLabel) {
                         if viewModel.canSendEmail {
                             self.isShowingMailView.toggle()
                         } else {
-                            print("Can't send emails from this device")
+                            debugPrint("Can't send emails from this device")
                         }
                         if result != nil {
-                            print("Result: \(String(describing: result))")
+                            debugPrint("Result: \(String(describing: result))")
                         }
                     }
                     .sheet(isPresented: $isShowingMailView) {
                         MailView(result: $result) { composer in
                             if let logs = viewModel.logs() {
                                 composer.addAttachmentData(logs, mimeType: "text/rtf", fileName: "logs.txt")
-                                composer.setSubject("Logs")
+                                composer.setSubject(appString.logsMessage())
                             } else {
-                                composer.setSubject("Logs")
-                                composer.setMessageBody("No logs found", isHTML: false)
+                                composer.setSubject(appString.logsMessage())
+                                composer.setMessageBody(appString.noLogsFoundMessage(), isHTML: false)
                             }
                             
                             composer.setToRecipients([Constants.customerSupportEmailAddress])
@@ -56,21 +52,17 @@ struct LogView: View {
                     Spacer.small()
                 }
                 Spacer.medium()
-            }.navigationBarTitle("Logs")
+            }.navigationBarTitle(appString.logsMessage())
             .navigationBarItems(
                 trailing: Button(action: {
                         self.presentation.wrappedValue.dismiss()
                     }, label: {
-                        Text("Dimiss").foregroundColor(Color.blue)
+                        Text(appString.dismissMessage()).foregroundColor(Color.blue)
                     }
                 )
             )
-            
         }
-        
-        
     }
-    
 }
 
 public struct MailView: UIViewControllerRepresentable {

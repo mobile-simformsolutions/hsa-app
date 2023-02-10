@@ -10,12 +10,6 @@ import Combine
 class WebViewStore: NSObject, ObservableObject {
     typealias Status = Int
 
-    enum Constants {
-        static let handlerName = "handler"
-        static let statusKey = "status"
-        static let responseUrlKey = "responseURL"
-    }
-
     @Published var webView: WKWebView {
         didSet {
             setupObservers()
@@ -52,10 +46,10 @@ class WebViewStore: NSObject, ObservableObject {
             do {
                 return try String(contentsOfFile: filepath)
             } catch {
-                print(error)
+                debugPrint(error)
             }
         } else {
-            print("ajaxObserverScript.js not found!")
+            debugPrint("ajaxObserverScript.js not found!")
         }
         return ""
     }
@@ -150,22 +144,22 @@ struct WebView: View, UIViewRepresentable {
         }
         
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation) {
-            print("didStartProvisionalNavigation")
-            print(webView.url?.absoluteString ?? "")
+            debugPrint("didStartProvisionalNavigation")
+            debugPrint(webView.url?.absoluteString ?? "")
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation) {
-            print("didFinish")
-            print(webView.url?.absoluteString ?? "")
+            debugPrint("didFinish")
+            debugPrint(webView.url?.absoluteString ?? "")
         }
         
         func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation) {
-            print("didReceiveServerRedirectForProvisionalNavigation")
-            print(webView.url?.absoluteString ?? "")
+            debugPrint("didReceiveServerRedirectForProvisionalNavigation")
+            debugPrint(webView.url?.absoluteString ?? "")
         }
     
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation, withError error: Error) {
-            print(error)
+            debugPrint(error)
             parent.onStatusChanged(error: error)
         }
         

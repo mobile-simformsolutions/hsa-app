@@ -62,11 +62,11 @@ extension Alert {
     
     static func fetchAlertConfiguration(_ retryBlock: @escaping () -> Void) -> AlertConfiguration {
         AlertConfiguration(
-            title: "Issue loading data",
-            message: "There was a problem loading your data",
+            title: appString.issueLoadingData(),
+            message: appString.thereWasAProblemText(),
             buttons: [
                 .cancel(),
-                .default(Text("Try Again"), action: {
+                .default(Text(appString.tryAgainMessage()), action: {
                     onMain {
                         retryBlock()
                     }
@@ -82,19 +82,12 @@ extension Alert {
         closeButtonBlock: (() -> Void)? = nil,
         retryBlock: @escaping () -> Void
     ) -> AlertConfiguration {
-        var errorMsg: String
-        if let apiError = error as? APIError {
-            errorMsg = apiError.alertDescription()
-        } else {
-            errorMsg = error.localizedDescription
-        }
-
         return AlertConfiguration(
-            title: "Issue loading data",
-            message: "There was a problem loading your data\n\(errorMsg)",
+            title: appString.issueLoadingData(),
+            message: appString.thereWasAProblemText(),
             buttons: [
                 .cancel(),
-                .default(Text("Try Again"), action: {
+                .default(Text(appString.tryAgainMessage()), action: {
                     onMain {
                         retryBlock()
                     }

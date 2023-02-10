@@ -175,7 +175,7 @@ extension APIService {
             addAuth(to: request) { (result) in
                 switch result {
                 case .failure:
-                    print("Failed to fetch Auth Tokens")
+                    debugPrint("Failed to fetch Auth Tokens")
                 case .success(let authdRequest):
                     let task = urlSession.dataTask(with: authdRequest) { (data, response, error) in
                         self.processResponse(data: data, response: response, error: error, responseType: T.self, extractionKey: extractionKey, completion: completion)
@@ -269,7 +269,7 @@ extension APIService {
         }
         
         let urlSession = URLSession(configuration: urlSessionConfiguration)
-        print("base URL \(baseURL)")
+        debugPrint("base URL \(baseURL)")
         guard let url = URL(string: "\(baseURL)\(path)") else {
             completion(.failure(APIError.badURL))
             return
@@ -298,7 +298,7 @@ extension APIService {
             addAuth(to: request) { (result) in
                 switch result {
                 case .failure:
-                    print("Failed to fetch Auth Tokens")
+                    debugPrint("Failed to fetch Auth Tokens")
                 case .success(let authdUrlRequest):
                     let task = urlSession.dataTask(with: authdUrlRequest) { (data, response, error) in
                         self.processResponse(data: data, response: response, error: error, responseType: T.self, extractionKey: extractionKey, completion: completion)
@@ -321,13 +321,9 @@ extension APIService {
                 switch err.code {
                 case .notConnectedToInternet, .networkConnectionLost, .cannotConnectToHost:
                     completion(.failure(APIError.noNetwork))
-                case .timedOut:
-                    completion(.failure(APIError.requestTimeout))
                 default:
                     completion(.failure(APIError.genericError))
                 }
-            } else {
-                completion(.failure(APIError.genericError))
             }
             return
         }
@@ -336,30 +332,7 @@ extension APIService {
             return
         }
         guard (200...299).contains(httpResponse.statusCode) else {
-            var message = ""
-            var codename = ""
-            if let data = data, let strData = String(data: unwrap(data), encoding: .utf8), let decoded = decode(json: strData, type: ErrorResponse.self) {
-                message = decoded.error.message
-                codename = decoded.error.code ?? ""
-                print("Error codename: \(codename)")
-                print("Error message: \(message)")
-            }
-            let apiError = APIError(errorCode: httpResponse.statusCode, message: MessageWithCodeResponse(message: message, code: codename))
-            print(apiError)
-            if apiError == .userNotLoggedIn {
-                return
-            } else if apiError == .serverError {
-                let userInfo = [
-                    NSLocalizedDescriptionKey: NSLocalizedString(apiError.errorDescription(), comment: ""),
-                    NSLocalizedFailureReasonErrorKey: NSLocalizedString("\nError from url: \(httpResponse.url?.absoluteString ?? "unknown url")", comment: "")
-                ]
-                let error = NSError(domain: NSCocoaErrorDomain,
-                                    code: -1001,
-                                    userInfo: userInfo)
-                self.analytics.logErrorToCrashlytics(error: error)
-            }
-            Log(.info, message: "\nError from url: \(httpResponse.url?.absoluteString ?? "unknown url") code:\(httpResponse.statusCode)")
-            completion(.failure(apiError))
+            setUpError(data: data, httpResponse: httpResponse)
             return
         }
         
@@ -368,25 +341,11 @@ extension APIService {
             return
         }
         let unwrapped = unwrap(data)
-        guard var strData = String(data: unwrapped, encoding: .utf8) else {
-            DispatchQueue.main.async {
-                let apiError = APIError.invalidDataRecieved
-                completion(.failure(apiError))
-            }
-            return
-        }
+        guard var strData = String(data: unwrapped, encoding: .utf8) else { return }
         if let extractionKey = extractionKey {
             strData = extract(json: strData, key: extractionKey)
         }
-        guard let decoded = decode(json: strData, type: responseType) else {
-            DispatchQueue.main.async {
-                let apiError = APIError.invalidDataRecieved
-                completion(.failure(apiError))
-            }
-            return
-        }
-
-        Log(.info, message: "url -> \(response?.url?.absoluteString ?? "unknown url") \nresponse json -> \(strData)")
+        guard let decoded = decode(json: strData, type: responseType) else { return }
         DispatchQueue.main.async {
             completion(.success(decoded))
             return
@@ -399,11 +358,11 @@ extension APIService {
             
             if let jsonDict = jsonObj as? [String: Any], let body = jsonDict["body"] {
                 jsonObj = body
-                print(body)
+                debugPrint(body)
             }
             if let jsonDict = jsonObj as? [String: AnyObject], let data = jsonDict["data"] {
                 jsonObj = data
-                print(data)
+                debugPrint(data)
             }
             let unwrappedData = try JSONSerialization.data(withJSONObject: jsonObj, options: .fragmentsAllowed)
             return unwrappedData
@@ -445,6 +404,32 @@ extension APIService {
         return request
     }
     
+    private func setUpError(data: Data?, httpResponse: HTTPURLResponse) {
+        var message = ""
+        var codename = ""
+        if let data = data, let strData = String(data: unwrap(data), encoding: .utf8), let decoded = decode(json: strData, type: ErrorResponse.self) {
+            message = decoded.error.message
+            codename = decoded.error.code ?? ""
+            debugPrint("Error codename: \(codename)")
+            debugPrint("Error message: \(message)")
+        }
+        let apiError = APIError(errorCode: httpResponse.statusCode, message: MessageWithCodeResponse(message: message, code: codename))
+        debugPrint(apiError)
+        if apiError == .userNotLoggedIn {
+            return
+        } else if apiError == .serverError {
+            let userInfo = [
+                NSLocalizedDescriptionKey: NSLocalizedString(apiError.errorDescription(), comment: ""),
+                NSLocalizedFailureReasonErrorKey: NSLocalizedString("\nError from url: \(httpResponse.url?.absoluteString ?? "unknown url")", comment: "")
+            ]
+            let error = NSError(domain: NSCocoaErrorDomain,
+                                code: -1001,
+                                userInfo: userInfo)
+            self.analytics.logErrorToCrashlytics(error: error)
+        }
+        Log(.info, message: "\nError from url: \(httpResponse.url?.absoluteString ?? "unknown url") code:\(httpResponse.statusCode)")
+    }
+    
 }
 
 // MARK: JSON tools
@@ -475,12 +460,10 @@ extension APIService {
             let jsonObj = try JSONSerialization.jsonObject(with: jsonData, options: .allowFragments)
             if let jsonDict = jsonObj as? [String: AnyObject],
                 jsonDict["data"] != nil {
-//                print(jsonDict["data"])
                 return true
             }
             
         } catch {
-//            let error = error
             return false
         }
         return false
@@ -498,11 +481,11 @@ extension APIService {
         
         do {
             let decoded = try decoder.decode(T.self, from: jsonData)
-            print(decoded)
+            debugPrint(decoded)
             return decoded
         } catch {
             let error = error
-            print(error)
+            debugPrint(error)
             return nil
         }
     }

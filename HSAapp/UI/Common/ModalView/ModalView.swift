@@ -6,18 +6,15 @@ import SwiftUI
 
 struct ModalView<Parent: View, Content: View>: View {
     @Environment(\.modalStyle) var style: AnyModalStyle
-    
     @Binding var isPresented: Bool
     
     var parent: Parent
     var content: Content
-    
     let backgroundRectangle = Rectangle()
     
     var body: some View {
         ZStack {
             parent
-            
             if isPresented {
                 style.makeBackground(
                     configuration: ModalStyleBackgroundConfiguration(
@@ -33,7 +30,6 @@ struct ModalView<Parent: View, Content: View>: View {
                 )
             }
         }
-        .animation(style.animation)
     }
     
     init(isPresented: Binding<Bool>, parent: Parent, @ViewBuilder content: () -> Content) {

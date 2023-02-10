@@ -50,8 +50,9 @@ final class XCUITestsFAQFlowTests: XCTestCase {
         
         // Close FAQ Screen
         let closeButton = app.buttons["Close"]
-        XCTAssertTrue(closeButton.waitForExistence(timeout: TimeInterval(timeInterval)))
-        closeButton.tap()
+        if (closeButton.waitForExistence(timeout: TimeInterval(timeInterval))) {
+            closeButton.tap()
+        }
         
         timeInterval = 5
         

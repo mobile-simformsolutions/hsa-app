@@ -13,9 +13,7 @@ class DashboardViewModel: ObservableObject {
     private var dashboardSummary: DashboardSummary?
     private let dateFormatter = DateFormatter()
     private let currencyFormatter = NumberFormatter.defaultCurrencyFormatter()
-    private let balanceUpdateDisplayFormat = "EE, MMM d h:mm a"
-    var balanceLabel = "Combined Balance"
-    var availableToSpendLabel = "Available to spend: "
+
     @Published var displayBalance: String
     @Published var balanceUpdateDisplay: String
     @Published var availableToSpendDisplay: String
@@ -38,10 +36,9 @@ class DashboardViewModel: ObservableObject {
         currencyFormatter.usesGroupingSeparator = true
         currencyFormatter.numberStyle = .currency
         displayBalance = currencyFormatter.string(from: NSNumber(value: 00)) ?? "00"
-
-        dateFormatter.dateFormat = balanceUpdateDisplayFormat
+        dateFormatter.dateFormat = Constants.balanceUpdateDisplayFormat
         balanceUpdateDisplay = "As of \(dateFormatter.string(from: Date()))"
-        availableToSpendDisplay = availableToSpendLabel
+        availableToSpendDisplay = appString.availableToSpend()
         setup()
     }
     
@@ -52,8 +49,6 @@ class DashboardViewModel: ObservableObject {
         
         if let dashboardSummary = localRealm.objects(DashboardSummary.self).first {
             self.dashboardSummary = dashboardSummary
-        } else {
-            print("no dashboard found")
         }
         
         guard let dashboardSummary = dashboardSummary, !dashboardSummary.isInvalidated else {
@@ -68,10 +63,10 @@ class DashboardViewModel: ObservableObject {
         if let hsaAccountSummary = dashboardSummary.accountSummary(for: .hsa) {
             hsaTile = DashboardTileViewModel(accountSummary: AccountSummaryDataModel(accountSummary: hsaAccountSummary))
         }
-        dateFormatter.dateFormat = balanceUpdateDisplayFormat
+        dateFormatter.dateFormat = Constants.balanceUpdateDisplayFormat
         balanceUpdateDisplay = "As of \(dateFormatter.string(from: Date()))"
         let availableToSpendAmount = currencyFormatter.string(from: NSNumber(value: dashboardSummary.availableBalanceToSpend))! // swiftlint:disable:this force_unwrapping
-        availableToSpendDisplay = availableToSpendLabel + availableToSpendAmount
+        availableToSpendDisplay = appString.availableToSpend() + availableToSpendAmount
     }
     
     func showTile(_ tile: DashboardTileViewModel) {

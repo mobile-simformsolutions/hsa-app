@@ -8,7 +8,7 @@ import MessageUI
 class LogViewModel: ObservableObject {
     
     @Published var canSendEmail = MFMailComposeViewController.canSendMail()
-    @Published var sendEmailLabel = MFMailComposeViewController.canSendMail() ? "Send" : "Configure email"
+    @Published var sendEmailLabel = MFMailComposeViewController.canSendMail() ? appString.sendText() : appString.configureEmail()
     
     var logData: String {
         let logs = Logging.shared.logData()

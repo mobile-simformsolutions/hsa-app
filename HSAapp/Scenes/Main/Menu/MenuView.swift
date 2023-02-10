@@ -43,7 +43,7 @@ struct MenuView: View {
                         .navigationBarTitle(Text(verbatim: link.title), displayMode: .inline)
                         .navigationBarItems(
                             trailing:
-                                Button("Close") {
+                                Button(appString.close()) {
                                     viewModel.currentLink = nil
                                 }
                         )

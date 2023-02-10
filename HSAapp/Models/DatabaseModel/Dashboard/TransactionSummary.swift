@@ -13,11 +13,11 @@ import RealmSwift
     func imageName() -> String {
         switch self {
         case .deposit:
-            return "deposit"
+            return appString.depositText()
         case .contribution:
-            return "contribution"
+            return appString.contribution()
         case .withdrawal:
-            return "reimbursement"
+            return appString.reimbursement()
         }
     }
     

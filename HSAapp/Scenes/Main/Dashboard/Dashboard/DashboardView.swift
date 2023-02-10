@@ -8,7 +8,6 @@ import RealmSwift
 
 struct DashboardView: View {
     
-    
     @StateObject var viewModel = DashboardViewModel()
     @Binding var selectedTab: MainViewTab
         
@@ -52,7 +51,7 @@ struct DashboardView: View {
             Text(viewModel.displayBalance)
                 .foregroundColor(Color.transactionPositive)
                 .styled(.custom(.poppins, .light, 54))
-            Text(viewModel.balanceLabel)
+            Text(appString.combindBalance)
                 .foregroundColor(Color.transactionDefault)
                 .styled(.custom(.poppins, .medium, 15))
             Text(viewModel.balanceUpdateDisplay)
@@ -77,12 +76,12 @@ struct DashboardView: View {
     var recentActivity: some View {
         HStack {
             VStack(alignment: .leading, spacing: 0) {
-                Text("Recent Activity")
+                Text(appString.recentActivity())
                     .font(Font.custom(.poppins, weight: .medium, size: 18))
             }
             Spacer()
             VStack(alignment: .trailing, spacing: 0) {
-                NavigationLink("See all", destination: NavigationLazyView(TransactionListScreen()))
+                NavigationLink(appString.seeAll(), destination: NavigationLazyView(TransactionListScreen()))
                     .buttonStyle(PlainButtonStyle())
                     .foregroundColor(.blue)
             }
@@ -95,7 +94,7 @@ struct DashboardView: View {
     var recentTransactions: some View {
         VStack {
             HStack {
-                Text("Recent Transactions".uppercased())
+                Text(appString.recentTransaction())
                     .font(Font.custom(.poppins, weight: .medium, size: 15))
                     .foregroundColor(.white)
                 Spacer()
@@ -118,7 +117,7 @@ struct DashboardView: View {
     var emptyRecentActivityView: some View {
         VStack {
             VStack(alignment: .leading) {
-            Text("Recent Activity")
+                Text(appString.recentActivity())
                 .styled(.custom(.poppins, .medium, 18))
                 .padding(.top, 20)
             Spacer.medium()
@@ -126,7 +125,7 @@ struct DashboardView: View {
                 .style(.list)
             }
             
-            Text("When you make a purchase or a deposit it will appear below.")
+            Text(appString.whenYouMakeAPurchase())
                 .styled(.custom(.poppins, .medium, 18))
             Spacer.medium()
             Image("card")

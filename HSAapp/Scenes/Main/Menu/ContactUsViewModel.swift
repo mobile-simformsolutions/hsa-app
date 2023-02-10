@@ -11,9 +11,6 @@ class ContactUsViewModel: ObservableObject {
     // MARK: - Variables
     //
     let imageName = "ContactUsIcon"
-    let title = "Contact us!"
-    let subtitle = "We’re here to help make sure you have a great experience with HSA!"
-    let buttonText = "Send Message"
 
     @Published var goToNextView = false
     @Published var goToDashboard = false
@@ -30,11 +27,11 @@ class ContactUsViewModel: ObservableObject {
     init(supportRequestType: SupportRequestType, sourceScreenName: SupportSourceScreenName) {
         self.supportRequestType = supportRequestType
         self.sourceScreenName = sourceScreenName
-        sendButtonState = .disabled(buttonText)
+        sendButtonState = .disabled(appString.sendMessage())
     }
 
     func validateForm(with text: String) {
-        sendButtonState = TextValidation.validate(.notNull, input: text) == .valid ? .normal(buttonText) : .disabled(buttonText)
+        sendButtonState = TextValidation.validate(.notNull, input: text) == .valid ? .normal(appString.sendMessage()) : .disabled(appString.sendMessage())
     }
 
     func sendSupportRequest(completion: @escaping (Result<(), Error>) -> Void) {

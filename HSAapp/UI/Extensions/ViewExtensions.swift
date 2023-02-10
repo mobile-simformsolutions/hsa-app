@@ -80,7 +80,6 @@ enum NavigationLocation {
 
 enum FontFace: String, RawRepresentable {
     case poppins = "Poppins"
-    case openSans = "OpenSans"
 }
 
 enum FontWeight: String, RawRepresentable {
@@ -88,7 +87,6 @@ enum FontWeight: String, RawRepresentable {
     case regular = "Regular"
     case semiBold = "SemiBold"
     case bold = "Bold"
-    case italic = "Italic"
     case light = "Light"
 }
 

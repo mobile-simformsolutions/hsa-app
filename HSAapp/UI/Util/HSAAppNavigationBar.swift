@@ -73,7 +73,7 @@ extension View {
 
     func configureNavigationTitleImage() -> some View {
         self
-            .navigationBarTitle("HSA", displayMode: .inline)
+            .navigationBarTitle(appString.hsaText(), displayMode: .inline)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
